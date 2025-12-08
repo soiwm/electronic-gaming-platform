@@ -1,0 +1,2 @@
+2025-12-09T00:14:52.481+08:00  INFO 20796 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T00:14:52.490+08:00  INFO 20796 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete

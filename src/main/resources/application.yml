@@ -1,0 +1,26 @@
+# Spring Boot 应用配置（YAML 格式）
+spring:
+  application:
+    name: electronic-gaming-platform  # 项目名称（可选，用于服务注册/日志等）
+  # （可选）后续添加数据库配置时，可在此处扩展
+  # datasource:
+  #   url: jdbc:mysql://localhost:3306/gaming_db?useSSL=false&serverTimezone=Asia/Shanghai
+  #   username: root
+  #   password: 123456
+  #   driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 服务器配置
+server:
+  port: 8080  # 后端端口（必须和前端代理 target 一致）
+  servlet:
+    context-path: /  # 应用根路径（默认 /，无需修改，前端请求无需加额外前缀）
+  tomcat:
+    uri-encoding: UTF-8  # 解决中文乱码（可选，推荐添加）
+
+# 日志配置（可选，优化日志输出）
+logging:
+  level:
+    root: INFO  # 全局日志级别（INFO/WARN/ERROR/DEBUG）
+    com.yourpackage: DEBUG  # 你的项目包名日志级别（方便调试接口）
+  file:
+    name: logs/gaming-platform.log  # 日志文件存储路径（可选）
