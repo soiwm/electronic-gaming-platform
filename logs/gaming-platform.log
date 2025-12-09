@@ -102,3 +102,324 @@
 2025-12-09T13:25:51.837+08:00  INFO 14656 --- [electronic-gaming-platform] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-12-09T13:25:51.837+08:00  INFO 14656 --- [electronic-gaming-platform] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-12-09T13:25:51.840+08:00  INFO 14656 --- [electronic-gaming-platform] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-09T15:51:07.249+08:00  INFO 14656 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T15:51:07.256+08:00  INFO 14656 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T16:28:40.589+08:00  INFO 2640 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 2640 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T16:28:40.594+08:00  INFO 2640 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T16:28:42.568+08:00  INFO 2640 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T16:28:42.590+08:00  INFO 2640 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T16:28:42.591+08:00  INFO 2640 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T16:28:42.665+08:00  INFO 2640 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1971 ms
+2025-12-09T16:28:43.318+08:00  INFO 2640 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T16:28:43.329+08:00  INFO 2640 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 3.58 seconds (process running for 9.108)
+2025-12-09T16:43:28.657+08:00  INFO 2640 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T16:43:28.657+08:00  INFO 2640 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T16:43:28.660+08:00  INFO 2640 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-09T17:15:11.182+08:00  WARN 2640 --- [electronic-gaming-platform] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: ":id"]
+2025-12-09T17:16:51.174+08:00  WARN 2640 --- [electronic-gaming-platform] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: ":id"]
+2025-12-09T18:06:10.916+08:00  INFO 2640 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T18:06:10.926+08:00  INFO 2640 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T18:06:16.418+08:00  INFO 5556 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 5556 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T18:06:16.420+08:00  INFO 5556 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T18:06:17.400+08:00  INFO 5556 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T18:06:17.411+08:00  INFO 5556 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T18:06:17.411+08:00  INFO 5556 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T18:06:17.442+08:00  INFO 5556 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 989 ms
+2025-12-09T18:06:17.723+08:00  INFO 5556 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T18:06:17.727+08:00  INFO 5556 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.609 seconds (process running for 2.154)
+2025-12-09T18:32:46.342+08:00  INFO 5556 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T18:32:46.348+08:00  INFO 5556 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T18:32:47.820+08:00  INFO 24012 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 24012 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T18:32:47.822+08:00  INFO 24012 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T18:32:48.342+08:00  INFO 24012 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T18:32:48.350+08:00  INFO 24012 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T18:32:48.350+08:00  INFO 24012 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T18:32:48.377+08:00  INFO 24012 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 521 ms
+2025-12-09T18:32:48.610+08:00  INFO 24012 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T18:32:48.613+08:00  INFO 24012 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.071 seconds (process running for 1.533)
+2025-12-09T18:33:55.155+08:00  INFO 24012 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T18:33:55.156+08:00  INFO 24012 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T18:33:55.158+08:00  INFO 24012 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-09T18:33:55.298+08:00 ERROR 24012 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: io.jsonwebtoken.io.DecodingException: Illegal base64 character: '-'] with root cause
+
+io.jsonwebtoken.io.DecodingException: Illegal base64 character: '-'
+	at io.jsonwebtoken.io.Base64.ctoi(Base64.java:221) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.io.Base64.decodeFast(Base64.java:270) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:36) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:23) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.io.ExceptionPropagatingDecoder.decode(ExceptionPropagatingDecoder.java:36) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:132) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.example.electronicgamingplatform.util.JwtUtils.generateToken(JwtUtils.java:29) ~[classes/:na]
+	at com.example.electronicgamingplatform.controller.LoginController.login(LoginController.java:34) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:520) ~[jakarta.servlet-api-5.0.0.jar:5.0.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587) ~[jakarta.servlet-api-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at com.example.electronicgamingplatform.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:23) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2025-12-09T18:33:58.905+08:00 ERROR 24012 --- [electronic-gaming-platform] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: io.jsonwebtoken.io.DecodingException: Illegal base64 character: '-'] with root cause
+
+io.jsonwebtoken.io.DecodingException: Illegal base64 character: '-'
+	at io.jsonwebtoken.io.Base64.ctoi(Base64.java:221) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.io.Base64.decodeFast(Base64.java:270) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:36) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:23) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.io.ExceptionPropagatingDecoder.decode(ExceptionPropagatingDecoder.java:36) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:132) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.example.electronicgamingplatform.util.JwtUtils.generateToken(JwtUtils.java:29) ~[classes/:na]
+	at com.example.electronicgamingplatform.controller.LoginController.login(LoginController.java:34) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:520) ~[jakarta.servlet-api-5.0.0.jar:5.0.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587) ~[jakarta.servlet-api-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at com.example.electronicgamingplatform.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:23) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2025-12-09T18:36:47.225+08:00  INFO 24012 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T18:36:47.231+08:00  INFO 24012 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T18:36:49.696+08:00  INFO 28644 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 28644 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T18:36:49.698+08:00  INFO 28644 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T18:36:50.295+08:00  INFO 28644 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T18:36:50.304+08:00  INFO 28644 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T18:36:50.304+08:00  INFO 28644 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T18:36:50.331+08:00  INFO 28644 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 601 ms
+2025-12-09T18:36:50.571+08:00  INFO 28644 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T18:36:50.574+08:00  INFO 28644 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.163 seconds (process running for 1.494)
+2025-12-09T18:37:07.726+08:00  INFO 28644 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T18:37:07.726+08:00  INFO 28644 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T18:37:07.727+08:00  INFO 28644 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-09T18:37:07.801+08:00 ERROR 28644 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: io.jsonwebtoken.security.WeakKeyException: The signing key's size is 96 bits which is not secure enough for the HS256 algorithm.  The JWT JWA Specification (RFC 7518, Section 3.2) states that keys used with HS256 MUST have a size >= 256 bits (the key size must be greater than or equal to the hash output size).  Consider using the io.jsonwebtoken.security.Keys class's 'secretKeyFor(SignatureAlgorithm.HS256)' method to create a key guaranteed to be secure enough for HS256.  See https://tools.ietf.org/html/rfc7518#section-3.2 for more information.] with root cause
+
+io.jsonwebtoken.security.WeakKeyException: The signing key's size is 96 bits which is not secure enough for the HS256 algorithm.  The JWT JWA Specification (RFC 7518, Section 3.2) states that keys used with HS256 MUST have a size >= 256 bits (the key size must be greater than or equal to the hash output size).  Consider using the io.jsonwebtoken.security.Keys class's 'secretKeyFor(SignatureAlgorithm.HS256)' method to create a key guaranteed to be secure enough for HS256.  See https://tools.ietf.org/html/rfc7518#section-3.2 for more information.
+	at io.jsonwebtoken.SignatureAlgorithm.assertValid(SignatureAlgorithm.java:387) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.SignatureAlgorithm.assertValidSigningKey(SignatureAlgorithm.java:315) ~[jjwt-api-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:112) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:125) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:133) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.example.electronicgamingplatform.util.JwtUtils.generateToken(JwtUtils.java:29) ~[classes/:na]
+	at com.example.electronicgamingplatform.controller.LoginController.login(LoginController.java:34) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:520) ~[jakarta.servlet-api-5.0.0.jar:5.0.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:587) ~[jakarta.servlet-api-5.0.0.jar:5.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at com.example.electronicgamingplatform.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:23) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2025-12-09T18:38:31.198+08:00  INFO 28644 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T18:38:31.204+08:00  INFO 28644 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T18:38:42.148+08:00  INFO 24200 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 24200 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T18:38:42.150+08:00  INFO 24200 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T18:38:42.755+08:00  INFO 24200 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T18:38:42.766+08:00  INFO 24200 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T18:38:42.766+08:00  INFO 24200 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T18:38:42.797+08:00  INFO 24200 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 609 ms
+2025-12-09T18:38:43.067+08:00  INFO 24200 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T18:38:43.071+08:00  INFO 24200 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.199 seconds (process running for 1.529)
+2025-12-09T18:38:47.175+08:00  INFO 24200 --- [electronic-gaming-platform] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T18:38:47.175+08:00  INFO 24200 --- [electronic-gaming-platform] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T18:38:47.177+08:00  INFO 24200 --- [electronic-gaming-platform] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-09T18:45:05.009+08:00  INFO 24200 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T18:45:05.015+08:00  INFO 24200 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T18:45:06.583+08:00  INFO 31504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 31504 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T18:45:06.585+08:00  INFO 31504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T18:45:07.111+08:00  INFO 31504 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T18:45:07.121+08:00  INFO 31504 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T18:45:07.121+08:00  INFO 31504 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T18:45:07.146+08:00  INFO 31504 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 529 ms
+2025-12-09T18:45:07.375+08:00  INFO 31504 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T18:45:07.378+08:00  INFO 31504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.184 seconds (process running for 1.563)
+2025-12-09T18:51:24.458+08:00  INFO 31504 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T18:51:24.459+08:00  INFO 31504 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T18:51:24.461+08:00  INFO 31504 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-09T19:09:05.249+08:00  INFO 31504 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T19:09:05.256+08:00  INFO 31504 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T19:09:06.846+08:00  INFO 19896 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 19896 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T19:09:06.848+08:00  INFO 19896 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T19:09:07.429+08:00  INFO 19896 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T19:09:07.440+08:00  INFO 19896 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T19:09:07.441+08:00  INFO 19896 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T19:09:07.470+08:00  INFO 19896 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 585 ms
+2025-12-09T19:09:07.725+08:00  INFO 19896 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T19:09:07.728+08:00  INFO 19896 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.363 seconds (process running for 1.707)
+2025-12-09T19:11:13.377+08:00  INFO 19896 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T19:11:13.383+08:00  INFO 19896 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T22:09:48.355+08:00  INFO 17132 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 17132 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T22:09:48.356+08:00  INFO 17132 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T22:09:49.115+08:00  INFO 17132 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T22:09:49.129+08:00  INFO 17132 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T22:09:49.129+08:00  INFO 17132 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T22:09:49.181+08:00  INFO 17132 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 776 ms
+2025-12-09T22:09:49.478+08:00  INFO 17132 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T22:09:49.481+08:00  INFO 17132 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.511 seconds (process running for 2.092)
+2025-12-09T22:12:14.270+08:00  INFO 17132 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T22:12:14.271+08:00  INFO 17132 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T22:12:14.273+08:00  INFO 17132 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-09T22:13:19.604+08:00  INFO 17132 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T22:13:19.609+08:00  INFO 17132 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T22:13:22.022+08:00  INFO 25564 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 25564 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T22:13:22.023+08:00  INFO 25564 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T22:13:22.525+08:00  INFO 25564 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T22:13:22.532+08:00  INFO 25564 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T22:13:22.533+08:00  INFO 25564 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T22:13:22.559+08:00  INFO 25564 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 508 ms
+2025-12-09T22:13:22.782+08:00  INFO 25564 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T22:13:22.786+08:00  INFO 25564 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.0 seconds (process running for 1.297)
+2025-12-09T22:13:45.720+08:00  INFO 25564 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T22:13:45.720+08:00  INFO 25564 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T22:13:45.721+08:00  INFO 25564 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-09T22:14:48.708+08:00  INFO 25564 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T22:14:48.714+08:00  INFO 25564 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T22:14:51.050+08:00  INFO 11692 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 11692 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T22:14:51.053+08:00  INFO 11692 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T22:14:51.544+08:00  INFO 11692 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T22:14:51.553+08:00  INFO 11692 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T22:14:51.553+08:00  INFO 11692 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T22:14:51.583+08:00  INFO 11692 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 501 ms
+2025-12-09T22:14:51.810+08:00  INFO 11692 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T22:14:51.812+08:00  INFO 11692 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.004 seconds (process running for 1.293)
+2025-12-09T22:14:54.808+08:00  INFO 11692 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T22:14:54.809+08:00  INFO 11692 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T22:14:54.810+08:00  INFO 11692 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-09T22:15:21.412+08:00  INFO 11692 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-09T22:15:21.417+08:00  INFO 11692 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-09T22:15:23.677+08:00  INFO 8652 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 8652 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-09T22:15:23.679+08:00  INFO 8652 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-09T22:15:24.205+08:00  INFO 8652 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-09T22:15:24.214+08:00  INFO 8652 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-09T22:15:24.214+08:00  INFO 8652 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-09T22:15:24.240+08:00  INFO 8652 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 529 ms
+2025-12-09T22:15:24.467+08:00  INFO 8652 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-09T22:15:24.470+08:00  INFO 8652 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.043 seconds (process running for 1.366)
+2025-12-09T22:21:12.328+08:00  INFO 8652 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-09T22:21:12.328+08:00  INFO 8652 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-09T22:21:12.329+08:00  INFO 8652 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
