@@ -18,4 +18,18 @@ public interface CustomerMapper {
      * 新增客户
      */
     boolean insertCustomer(Customer customer);
+    /**
+     * 根据ID查询客户
+     */
+    Customer selectCustomerById(Long id);
+
+    /**
+     * 更新客户信息
+     */
+    boolean updateCustomer(Customer customer);
+
+    /**
+     * 根据ID删除客户
+     */
+    boolean deleteCustomerById(Long id);
 }

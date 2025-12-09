@@ -19,6 +19,30 @@ public class GameController {
     private GameService gameService;
 
     /**
+     * 根据 ID 查询游戏
+     */
+    @GetMapping("/{id}")
+    public Result<Game> getGameById(@PathVariable Long id) {
+        Game game = gameService.getGameById(id);
+        if (game == null) {
+            return Result.error("游戏不存在");
+        }
+        return Result.success(game);
+    }
+
+    /**
+     * 修改游戏信息
+     */
+    @PutMapping("/update")
+    public Result<String> updateGame(@RequestBody Game game) {
+        boolean success = gameService.updateGame(game);
+        if (!success) {
+            return Result.error("游戏名称不能为空或游戏不存在");
+        }
+        return Result.success("游戏更新成功");
+    }
+
+    /**
      * 游戏列表查询（调用 Service → Mapper → 模拟数据）
      */
     @GetMapping("/list")

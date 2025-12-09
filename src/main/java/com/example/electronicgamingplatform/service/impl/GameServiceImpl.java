@@ -48,4 +48,27 @@ public class GameServiceImpl implements GameService {
         }
         return gameMapper.deleteGameById(id); // 调用 Mapper 层方法
     }
+
+    /**
+     * 根据 ID 查询游戏（调用 Mapper 的查询方法）
+     */
+    @Override
+    public Game getGameById(Long id) {
+        if (id == null || id <= 0) {
+            return null;
+        }
+        return gameMapper.selectGameById(id);
+    }
+
+    /**
+     * 修改游戏信息（调用 Mapper 的更新方法）
+     */
+    @Override
+    public boolean updateGame(Game game) {
+        // 业务校验：名称不能为空
+        if (game.getName() == null || game.getName().trim().isEmpty()) {
+            return false;
+        }
+        return gameMapper.updateGame(game);
+    }
 }

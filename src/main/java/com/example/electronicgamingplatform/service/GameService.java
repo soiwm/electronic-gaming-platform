@@ -23,4 +23,13 @@ public interface GameService {
      * 根据 ID 删除游戏
      */
     boolean removeGameById(Long id);
+
+    /**
+     * 根据 ID 查询游戏
+     */
+    Game getGameById(Long id);
+    /**
+     * 修改游戏信息
+     */
+    boolean updateGame(Game game);
 }

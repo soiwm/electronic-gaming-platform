@@ -24,4 +24,12 @@ public interface GameMapper {
      * 根据 ID 删除游戏
      */
     boolean deleteGameById(Long id);
+    /**
+     * 根据 ID 查询游戏
+     */
+    Game selectGameById(Long id);
+    /**
+     * 修改游戏信息
+     */
+    boolean updateGame(Game game);
 }
