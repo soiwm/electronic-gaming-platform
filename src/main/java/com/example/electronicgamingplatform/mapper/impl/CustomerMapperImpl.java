@@ -25,6 +25,13 @@ public class CustomerMapperImpl implements CustomerMapper {
         CUSTOMER_MAP.put(1L, new Customer(1L, "张三", "1", "13800138000", "北京市朝阳区", "zhangsan@example.com"));
         CUSTOMER_MAP.put(2L, new Customer(2L, "李四", "2", "13900139000", "上海市浦东新区", "lisi@example.com"));
         CUSTOMER_MAP.put(3L, new Customer(3L, "王五", "1", "13700137000", "广州市天河区", "wangwu@example.com"));
+        CUSTOMER_MAP.put(4L, new Customer(4L, "赵六", "2", "13600136000", "深圳市南山区", "zhaoliu@example.com"));
+        CUSTOMER_MAP.put(5L, new Customer(5L, "孙七", "1", "13500135000", "杭州市西湖区", "sunqi@example.com"));
+        CUSTOMER_MAP.put(6L, new Customer(6L, "周八", "2", "13400134000", "南京市秦淮区", "zhouba@example.com"));
+        CUSTOMER_MAP.put(7L, new Customer(7L, "吴九", "1", "13300133000", "成都市锦江区", "wujiu@example.com"));
+        CUSTOMER_MAP.put(8L, new Customer(8L, "郑十", "2", "13200132000", "武汉市江汉区", "zhengshi@example.com"));
+        CUSTOMER_MAP.put(9L, new Customer(9L, "冯十一", "1", "13100131000", "重庆市渝中区", "fengshiyi@example.com"));
+        CUSTOMER_MAP.put(10L, new Customer(10L, "陈十二", "2", "13000130000", "西安市雁塔区", "chenshi'er@example.com"));
     }
 
     /**
