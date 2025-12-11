@@ -187,4 +187,44 @@ public class OrderServiceImpl implements OrderService {
         ageDistribution.put("over50", 15);
         return ageDistribution;
     }
+
+    @Override
+    public List<OrderVO> getUserOrders() {
+        List<OrderVO> orderVOList = new ArrayList<>();
+        
+        // 获取用户订单（模拟当前用户ID为1）
+        Long customerId = 1L;
+        List<Order> orders = orderMapper.getOrdersByCustomerId(customerId);
+        
+        // 转换为OrderVO并关联游戏和客户信息
+        for (Order order : orders) {
+            OrderVO orderVO = new OrderVO();
+            
+            // 复制订单基本信息
+            orderVO.setId(order.getId());
+            orderVO.setAmount(order.getAmount());
+            orderVO.setCreateTime(order.getCreateTime());
+            orderVO.setUpdateTime(order.getUpdateTime());
+            
+            // 关联客户信息
+            Customer customer = customerMapper.selectCustomerById(order.getCustomerId());
+            if (customer != null) {
+                orderVO.setCustomerName(customer.getName());
+            } else {
+                orderVO.setCustomerName("未知客户");
+            }
+            
+            // 关联游戏信息
+            Game game = gameMapper.selectGameById(order.getGameId());
+            if (game != null) {
+                orderVO.setGameName(game.getName());
+            } else {
+                orderVO.setGameName("未知游戏");
+            }
+            
+            orderVOList.add(orderVO);
+        }
+        
+        return orderVOList;
+    }
 }

@@ -53,6 +53,20 @@ public class CustomerMapperImpl implements CustomerMapper {
     }
 
     /**
+     * 根据手机号查询客户
+     */
+    @Override
+    public Customer selectCustomerByPhone(String phone) {
+        // 遍历 Map 查找手机号匹配的客户
+        for (Customer customer : CUSTOMER_MAP.values()) {
+            if (customer.getPhone() != null && customer.getPhone().equals(phone)) {
+                return customer;
+            }
+        }
+        return null; // 未找到匹配的客户
+    }
+
+    /**
      * 新增客户
      */
     @Override

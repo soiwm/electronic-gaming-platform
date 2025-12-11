@@ -1,114 +1,68 @@
-2025-12-10T00:21:05.731+08:00  INFO 8652 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T00:21:05.754+08:00  INFO 8652 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T12:44:54.237+08:00  INFO 22344 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 22344 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T12:44:54.242+08:00  INFO 22344 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T12:44:55.001+08:00  INFO 22344 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T12:44:55.016+08:00  INFO 22344 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T12:44:55.016+08:00  INFO 22344 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T12:44:55.042+08:00  INFO 22344 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 725 ms
-2025-12-10T12:44:55.289+08:00  INFO 22344 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T12:44:55.292+08:00  INFO 22344 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.416 seconds (process running for 1.934)
-2025-12-10T12:47:47.424+08:00  INFO 22344 --- [electronic-gaming-platform] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-10T12:47:47.425+08:00  INFO 22344 --- [electronic-gaming-platform] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-10T12:47:47.426+08:00  INFO 22344 --- [electronic-gaming-platform] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-10T13:25:45.161+08:00  INFO 22344 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T13:25:45.170+08:00  INFO 22344 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T13:25:48.495+08:00  INFO 3068 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 3068 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T13:25:48.497+08:00  INFO 3068 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T13:25:49.202+08:00  INFO 3068 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T13:25:49.214+08:00  INFO 3068 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T13:25:49.214+08:00  INFO 3068 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T13:25:49.244+08:00  INFO 3068 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 717 ms
-2025-12-10T13:25:49.483+08:00  INFO 3068 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T13:25:49.486+08:00  INFO 3068 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.256 seconds (process running for 1.616)
-2025-12-10T13:27:36.119+08:00  INFO 3068 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T13:27:36.125+08:00  INFO 3068 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T13:27:38.729+08:00  INFO 23132 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 23132 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T13:27:38.730+08:00  INFO 23132 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T13:27:39.252+08:00  INFO 23132 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T13:27:39.260+08:00  INFO 23132 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T13:27:39.260+08:00  INFO 23132 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T13:27:39.287+08:00  INFO 23132 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 527 ms
-2025-12-10T13:27:39.523+08:00  INFO 23132 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T13:27:39.527+08:00  INFO 23132 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.051 seconds (process running for 1.368)
-2025-12-10T13:28:16.996+08:00  INFO 23132 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-10T13:28:16.996+08:00  INFO 23132 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-10T13:28:16.997+08:00  INFO 23132 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-12-10T13:42:29.747+08:00  INFO 23132 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T13:42:29.752+08:00  INFO 23132 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T13:42:32.318+08:00  INFO 10428 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 10428 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T13:42:32.319+08:00  INFO 10428 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T13:42:32.917+08:00  INFO 10428 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T13:42:32.926+08:00  INFO 10428 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T13:42:32.927+08:00  INFO 10428 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T13:42:32.961+08:00  INFO 10428 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 611 ms
-2025-12-10T13:42:33.230+08:00  INFO 10428 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T13:42:33.233+08:00  INFO 10428 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.176 seconds (process running for 1.487)
-2025-12-10T13:42:40.440+08:00  INFO 10428 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-10T13:42:40.441+08:00  INFO 10428 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-10T13:42:40.442+08:00  INFO 10428 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-12-10T15:42:56.448+08:00  INFO 10428 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T15:42:56.455+08:00  INFO 10428 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T17:56:20.488+08:00  INFO 16352 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 16352 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T17:56:20.493+08:00  INFO 16352 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T17:56:22.602+08:00  INFO 16352 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T17:56:22.648+08:00  INFO 16352 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T17:56:22.649+08:00  INFO 16352 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T17:56:22.773+08:00  INFO 16352 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2191 ms
-2025-12-10T17:56:23.606+08:00  INFO 16352 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T17:56:23.618+08:00  INFO 16352 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 3.867 seconds (process running for 5.237)
-2025-12-10T17:58:30.492+08:00  INFO 16352 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-10T17:58:30.493+08:00  INFO 16352 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-10T17:58:30.494+08:00  INFO 16352 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-10T18:04:32.428+08:00  INFO 16352 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T18:04:32.442+08:00  INFO 16352 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T18:04:35.879+08:00  INFO 504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 504 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T18:04:35.881+08:00  INFO 504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T18:04:36.589+08:00  INFO 504 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T18:04:36.599+08:00  INFO 504 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T18:04:36.599+08:00  INFO 504 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T18:04:36.631+08:00  INFO 504 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 720 ms
-2025-12-10T18:04:36.878+08:00  INFO 504 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T18:04:36.881+08:00  INFO 504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.254 seconds (process running for 1.587)
-2025-12-10T18:04:50.788+08:00  INFO 504 --- [electronic-gaming-platform] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-10T18:04:50.788+08:00  INFO 504 --- [electronic-gaming-platform] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-10T18:04:50.789+08:00  INFO 504 --- [electronic-gaming-platform] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-10T18:28:02.350+08:00  INFO 504 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T18:28:02.357+08:00  INFO 504 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T18:28:41.676+08:00  INFO 19476 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 19476 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T18:28:41.678+08:00  INFO 19476 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T18:28:42.242+08:00  INFO 19476 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T18:28:42.251+08:00  INFO 19476 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T18:28:42.252+08:00  INFO 19476 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T18:28:42.289+08:00  INFO 19476 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 583 ms
-2025-12-10T18:28:42.532+08:00  INFO 19476 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T18:28:42.535+08:00  INFO 19476 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.107 seconds (process running for 1.428)
-2025-12-10T18:29:02.571+08:00  INFO 19476 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-10T18:29:02.572+08:00  INFO 19476 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-10T18:29:02.572+08:00  INFO 19476 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-12-10T19:00:46.331+08:00  INFO 19476 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T19:00:46.341+08:00  INFO 19476 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T22:25:28.618+08:00  INFO 24332 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 24332 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T22:25:28.623+08:00  INFO 24332 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T22:25:29.835+08:00  INFO 24332 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T22:25:29.846+08:00  INFO 24332 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T22:25:29.846+08:00  INFO 24332 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T22:25:29.895+08:00  INFO 24332 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1179 ms
-2025-12-10T22:25:30.582+08:00  INFO 24332 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T22:25:30.589+08:00  INFO 24332 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 2.72 seconds (process running for 3.761)
-2025-12-10T22:27:00.688+08:00  INFO 24332 --- [electronic-gaming-platform] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-10T22:27:00.690+08:00  INFO 24332 --- [electronic-gaming-platform] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-10T22:27:00.692+08:00  INFO 24332 --- [electronic-gaming-platform] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-12-10T22:52:20.518+08:00  INFO 24332 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-10T22:52:20.532+08:00  INFO 24332 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-10T22:52:23.874+08:00  INFO 18972 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 18972 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-10T22:52:23.876+08:00  INFO 18972 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-10T22:52:24.541+08:00  INFO 18972 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-10T22:52:24.552+08:00  INFO 18972 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-10T22:52:24.552+08:00  INFO 18972 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-10T22:52:24.586+08:00  INFO 18972 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 676 ms
-2025-12-10T22:52:24.836+08:00  INFO 18972 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-10T22:52:24.840+08:00  INFO 18972 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.265 seconds (process running for 1.662)
-2025-12-10T22:53:05.850+08:00  INFO 18972 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-10T22:53:05.851+08:00  INFO 18972 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-10T22:53:05.853+08:00  INFO 18972 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-11T00:16:59.781+08:00  INFO 18972 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T00:16:59.794+08:00  INFO 18972 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T10:44:11.540+08:00  INFO 24048 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 24048 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-11T10:44:11.543+08:00  INFO 24048 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T10:44:12.637+08:00  INFO 24048 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T10:44:12.649+08:00  INFO 24048 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T10:44:12.649+08:00  INFO 24048 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T10:44:12.679+08:00  INFO 24048 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1099 ms
+2025-12-11T10:44:13.010+08:00  INFO 24048 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T10:44:13.013+08:00  INFO 24048 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.95 seconds (process running for 9.317)
+2025-12-11T10:46:18.131+08:00  INFO 24048 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T10:46:18.132+08:00  INFO 24048 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T10:46:18.134+08:00  INFO 24048 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-11T11:00:09.064+08:00  INFO 24048 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T11:00:09.076+08:00  INFO 24048 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T11:00:15.674+08:00  INFO 24732 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 24732 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-11T11:00:15.676+08:00  INFO 24732 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T11:00:16.472+08:00  INFO 24732 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T11:00:16.484+08:00  INFO 24732 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T11:00:16.484+08:00  INFO 24732 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T11:00:16.515+08:00  INFO 24732 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 805 ms
+2025-12-11T11:00:16.793+08:00  INFO 24732 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T11:00:16.796+08:00  INFO 24732 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.464 seconds (process running for 2.087)
+2025-12-11T11:02:26.944+08:00  INFO 24732 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T11:02:26.945+08:00  INFO 24732 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T11:02:26.946+08:00  INFO 24732 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-11T11:05:15.680+08:00  INFO 24732 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T11:05:15.686+08:00  INFO 24732 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T11:05:17.780+08:00  INFO 9480 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 9480 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-11T11:05:17.782+08:00  INFO 9480 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T11:05:18.284+08:00  INFO 9480 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T11:05:18.293+08:00  INFO 9480 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T11:05:18.293+08:00  INFO 9480 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T11:05:18.327+08:00  INFO 9480 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 517 ms
+2025-12-11T11:05:18.553+08:00  INFO 9480 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T11:05:18.556+08:00  INFO 9480 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.019 seconds (process running for 1.306)
+2025-12-11T11:05:35.542+08:00  INFO 9480 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T11:05:35.542+08:00  INFO 9480 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T11:05:35.543+08:00  INFO 9480 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-11T11:13:15.909+08:00  INFO 9480 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T11:13:15.914+08:00  INFO 9480 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T11:13:18.278+08:00  INFO 12804 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 12804 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-11T11:13:18.280+08:00  INFO 12804 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T11:13:18.877+08:00  INFO 12804 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T11:13:18.885+08:00  INFO 12804 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T11:13:18.886+08:00  INFO 12804 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T11:13:18.915+08:00  INFO 12804 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 607 ms
+2025-12-11T11:13:19.166+08:00  INFO 12804 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T11:13:19.169+08:00  INFO 12804 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.132 seconds (process running for 1.421)
+2025-12-11T11:13:24.644+08:00  INFO 12804 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T11:13:24.644+08:00  INFO 12804 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T11:13:24.645+08:00  INFO 12804 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-11T12:08:36.883+08:00  INFO 12804 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T12:08:36.892+08:00  INFO 12804 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T12:08:39.674+08:00  INFO 12056 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 12056 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-11T12:08:39.675+08:00  INFO 12056 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T12:08:40.243+08:00  INFO 12056 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T12:08:40.253+08:00  INFO 12056 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T12:08:40.253+08:00  INFO 12056 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T12:08:40.282+08:00  INFO 12056 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 579 ms
+2025-12-11T12:08:40.542+08:00  INFO 12056 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T12:08:40.546+08:00  INFO 12056 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.12 seconds (process running for 1.439)
+2025-12-11T12:08:46.694+08:00  INFO 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T12:08:46.694+08:00  INFO 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T12:08:46.695+08:00  INFO 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-12-11T12:15:43.982+08:00  WARN 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-12-11T12:16:06.941+08:00  WARN 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-12-11T12:16:30.290+08:00  WARN 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]

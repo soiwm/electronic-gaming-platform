@@ -89,5 +89,16 @@ public class OrderController {
             return Result.error("订单删除失败：ID无效或订单不存在");
         }
     }
+
+    /**
+     * 6. 查询用户订单列表
+     * 请求方式：GET
+     * 接口路径：/order/user/list
+     */
+    @GetMapping("/user/list")
+    public Result<List<OrderVO>> getUserOrders() {
+        List<OrderVO> orderVOList = orderService.getUserOrders();
+        return Result.success(orderVOList);
+    }
 }
 

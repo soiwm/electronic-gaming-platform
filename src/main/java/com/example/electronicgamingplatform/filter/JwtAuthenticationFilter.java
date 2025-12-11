@@ -11,7 +11,7 @@ import java.io.IOException;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     // 不需要认证的路径
-    private static final String[] WHITE_LIST = {"/auth/login", "/auth/logout"};
+    private static final String[] WHITE_LIST = {"/auth/login", "/auth/logout", "/auth/customer/login"};
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,

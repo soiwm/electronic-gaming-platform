@@ -56,4 +56,10 @@ public interface OrderService {
      * @return 年龄分级统计数据
      */
     Map<String, Integer> getAgeDistribution();
+
+    /**
+     * 获取用户订单列表
+     * @return 用户订单VO列表
+     */
+    List<OrderVO> getUserOrders();
 }

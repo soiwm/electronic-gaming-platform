@@ -24,6 +24,11 @@ public interface CustomerMapper {
     Customer selectCustomerById(Long id);
 
     /**
+     * 根据手机号查询客户
+     */
+    Customer selectCustomerByPhone(String phone);
+
+    /**
      * 更新客户信息
      */
     boolean updateCustomer(Customer customer);

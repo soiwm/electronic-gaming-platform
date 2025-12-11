@@ -44,4 +44,11 @@ public interface OrderMapper {
      * 按游戏ID统计销量
      */
     List<Order> getOrderGroupByGameId();
+
+    /**
+     * 根据客户ID查询订单
+     * @param customerId 客户ID
+     * @return 订单列表
+     */
+    List<Order> getOrdersByCustomerId(Long customerId);
 }

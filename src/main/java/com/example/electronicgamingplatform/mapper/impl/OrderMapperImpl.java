@@ -124,6 +124,20 @@ public class OrderMapperImpl implements OrderMapper {
         return new ArrayList<>(orderMap.values()); // 返回所有订单，供Service层分组统计
     }
 
+    @Override
+    public List<Order> getOrdersByCustomerId(Long customerId) {
+        List<Order> customerOrders = new ArrayList<>();
+        
+        // 遍历所有订单，筛选出指定客户的订单
+        for (Order order : orderMap.values()) {
+            if (order.getCustomerId().equals(customerId)) {
+                customerOrders.add(order);
+            }
+        }
+        
+        return customerOrders;
+    }
+
     // 提供获取自增ID的方法（供Service层调用）
     public Long getNextId() {
         return nextId++;

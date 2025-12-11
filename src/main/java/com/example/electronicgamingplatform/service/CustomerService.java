@@ -33,4 +33,12 @@ public interface CustomerService {
      * 根据ID删除客户
      */
     boolean removeCustomerById(Long id);
+    
+    /**
+     * 根据手机号和密码验证客户
+     * @param phone 客户手机号
+     * @param password 客户密码
+     * @return 验证通过返回客户信息，否则返回null
+     */
+    Customer authenticateCustomer(String phone, String password);
 }

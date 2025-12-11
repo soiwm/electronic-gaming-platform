@@ -83,4 +83,22 @@ public class CustomerServiceImpl implements CustomerService {
         // 调用 Mapper 层删除
         return customerMapper.deleteCustomerById(id);
     }
+    
+    /**
+     * 根据手机号和密码验证客户
+     */
+    @Override
+    public Customer authenticateCustomer(String phone, String password) {
+        // 业务校验：手机号和密码不能为空
+        if (phone == null || phone.trim().isEmpty() || password == null || password.trim().isEmpty()) {
+            return null;
+        }
+        // 调用 Mapper 层查询客户
+        Customer customer = customerMapper.selectCustomerByPhone(phone);
+        // 验证客户是否存在且密码匹配（实际项目中密码应该是加密存储的）
+        if (customer != null && password.equals(customer.getPhone())) { // 临时使用手机号作为密码，实际应有专门密码字段
+            return customer;
+        }
+        return null;
+    }
 }
