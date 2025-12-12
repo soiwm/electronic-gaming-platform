@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.electronicgamingplatform.mapper.OrderMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="OrderResultMap" type="com.example.electronicgamingplatform.entity.Order">
+        <id property="id" column="ID"/>
+        <result property="customerId" column="CUSTOMER_ID"/>
+        <result property="gameId" column="GAME_ID"/>
+        <result property="amount" column="AMOUNT"/>
+        <result property="createTime" column="CREATE_TIME"/>
+        <result property="updateTime" column="UPDATE_TIME"/>
+    </resultMap>
+
+    <!-- OrderVO结果映射 -->
+    <resultMap id="OrderVOResultMap" type="com.example.electronicgamingplatform.vo.OrderVO">
+        <id property="id" column="ID"/>
+        <result property="customerId" column="CUSTOMER_ID"/>
+        <result property="customerName" column="CUSTOMER_NAME"/>
+        <result property="gameId" column="GAME_ID"/>
+        <result property="gameName" column="GAME_NAME"/>
+        <result property="amount" column="AMOUNT"/>
+        <result property="createTime" column="CREATE_TIME"/>
+        <result property="updateTime" column="UPDATE_TIME"/>
+    </resultMap>
+
+    <!-- 查询所有订单 -->
+    <select id="getAllOrders" resultMap="OrderResultMap">
+        SELECT ID, CUSTOMER_ID, GAME_ID, AMOUNT, CREATE_TIME, UPDATE_TIME
+        FROM ORDERS
+        ORDER BY CREATE_TIME DESC
+    </select>
+
+    <!-- 查询所有订单VO -->
+    <select id="getAllOrderVOs" resultMap="OrderVOResultMap">
+        SELECT o.ID, o.CUSTOMER_ID, c.NAME AS CUSTOMER_NAME, o.GAME_ID, g.NAME AS GAME_NAME, o.AMOUNT, o.CREATE_TIME, o.UPDATE_TIME
+        FROM ORDERS o
+        LEFT JOIN CUSTOMERS c ON o.CUSTOMER_ID = c.ID
+        LEFT JOIN GAMES g ON o.GAME_ID = g.ID
+        ORDER BY o.CREATE_TIME DESC
+    </select>
+
+    <!-- 根据ID查询订单 -->
+    <select id="getOrderById" resultMap="OrderResultMap">
+        SELECT ID, CUSTOMER_ID, GAME_ID, AMOUNT, CREATE_TIME, UPDATE_TIME
+        FROM ORDERS
+        WHERE ID = #{id,jdbcType=NUMERIC}
+    </select>
+
+    <!-- 新增订单 -->
+    <insert id="addOrder" parameterType="com.example.electronicgamingplatform.entity.Order" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO ORDERS (CUSTOMER_ID, GAME_ID, AMOUNT, CREATE_TIME, UPDATE_TIME)
+        VALUES (#{customerId,jdbcType=NUMERIC}, #{gameId,jdbcType=NUMERIC}, #{amount,jdbcType=NUMERIC}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+        <selectKey keyProperty="id" resultType="java.lang.Long" order="AFTER">
+            SELECT SYSTEM.ORDERS_SEQ.CURRVAL FROM DUAL
+        </selectKey>
+    </insert>
+
+    <!-- 更新订单 -->
+    <update id="updateOrder" parameterType="com.example.electronicgamingplatform.entity.Order">
+        UPDATE ORDERS
+        SET CUSTOMER_ID = #{customerId,jdbcType=NUMERIC},
+            GAME_ID = #{gameId,jdbcType=NUMERIC},
+            AMOUNT = #{amount,jdbcType=NUMERIC},
+            UPDATE_TIME = SYSDATE
+        WHERE ID = #{id,jdbcType=NUMERIC}
+    </update>
+
+    <!-- 删除订单 -->
+    <delete id="deleteOrderById">
+        DELETE FROM ORDERS
+        WHERE ID = #{id,jdbcType=NUMERIC}
+    </delete>
+
+    <!-- 按游戏ID统计销量 -->
+    <select id="getOrderGroupByGameId" resultType="java.util.Map">
+        SELECT GAME_ID as "gameId", COUNT(*) as "sales"
+        FROM ORDERS
+        GROUP BY GAME_ID
+        ORDER BY "sales" DESC
+    </select>
+
+    <!-- 根据客户ID查询订单 -->
+    <select id="getOrdersByCustomerId" resultMap="OrderResultMap">
+        SELECT ID, CUSTOMER_ID, GAME_ID, AMOUNT, CREATE_TIME, UPDATE_TIME
+        FROM ORDERS
+        WHERE CUSTOMER_ID = #{customerId,jdbcType=NUMERIC}
+        ORDER BY ID DESC
+    </select>
+
+</mapper>

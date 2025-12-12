@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.electronicgamingplatform.mapper.CustomerMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="CustomerResultMap" type="com.example.electronicgamingplatform.entity.Customer">
+        <id property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="gender" column="GENDER"/>
+        <result property="phone" column="PHONE"/>
+        <result property="address" column="ADDRESS"/>
+        <result property="email" column="EMAIL"/>
+        <result property="birthDate" column="BIRTH_DATE"/>
+    </resultMap>
+
+    <!-- 查询所有客户 -->
+    <select id="selectAllCustomers" resultMap="CustomerResultMap">
+        SELECT ID, NAME, GENDER, PHONE, ADDRESS, EMAIL, BIRTH_DATE
+        FROM CUSTOMERS
+        ORDER BY ID
+    </select>
+
+    <!-- 根据ID查询客户 -->
+    <select id="selectCustomerById" resultMap="CustomerResultMap">
+        SELECT ID, NAME, GENDER, PHONE, ADDRESS, EMAIL, BIRTH_DATE
+        FROM CUSTOMERS
+        WHERE ID = #{id,jdbcType=NUMERIC}
+    </select>
+
+    <!-- 根据手机号查询客户 -->
+    <select id="selectCustomerByPhone" resultMap="CustomerResultMap">
+        SELECT ID, NAME, GENDER, PHONE, ADDRESS, EMAIL, BIRTH_DATE
+        FROM CUSTOMERS
+        WHERE PHONE = #{phone,jdbcType=VARCHAR}
+    </select>
+
+    <!-- 新增客户 -->
+    <insert id="insertCustomer" parameterType="com.example.electronicgamingplatform.entity.Customer">
+        <selectKey keyProperty="id" resultType="java.lang.Long" order="AFTER">
+            SELECT CUSTOMERS_SEQ.CURRVAL FROM DUAL
+        </selectKey>
+        INSERT INTO CUSTOMERS (NAME, GENDER, PHONE, ADDRESS, EMAIL, BIRTH_DATE)
+        VALUES (#{name,jdbcType=VARCHAR}, #{gender,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{birthDate,jdbcType=DATE})
+    </insert>
+
+    <!-- 更新客户信息 -->
+    <update id="updateCustomer" parameterType="com.example.electronicgamingplatform.entity.Customer">
+        UPDATE CUSTOMERS
+        SET NAME = #{name,jdbcType=VARCHAR},
+            GENDER = #{gender,jdbcType=VARCHAR},
+            PHONE = #{phone,jdbcType=VARCHAR},
+            ADDRESS = #{address,jdbcType=VARCHAR},
+            EMAIL = #{email,jdbcType=VARCHAR},
+            BIRTH_DATE = #{birthDate,jdbcType=DATE},
+            UPDATE_TIME = SYSDATE
+        WHERE ID = #{id,jdbcType=NUMERIC}
+    </update>
+
+    <!-- 根据ID删除客户 -->
+    <delete id="deleteCustomerById">
+        DELETE FROM CUSTOMERS
+        WHERE ID = #{id,jdbcType=NUMERIC}
+    </delete>
+
+    <!-- 查询客户年龄分布 -->
+    <select id="getAgeDistribution" resultType="java.util.Map">
+        SELECT 
+            SUM(CASE WHEN TRUNC(MONTHS_BETWEEN(SYSDATE, BIRTH_DATE) / 12) &lt; 18 THEN 1 ELSE 0 END) as under18,
+            SUM(CASE WHEN TRUNC(MONTHS_BETWEEN(SYSDATE, BIRTH_DATE) / 12) BETWEEN 18 AND 35 THEN 1 ELSE 0 END) as age18to35,
+            SUM(CASE WHEN TRUNC(MONTHS_BETWEEN(SYSDATE, BIRTH_DATE) / 12) BETWEEN 35 AND 50 THEN 1 ELSE 0 END) as age35to50,
+            SUM(CASE WHEN TRUNC(MONTHS_BETWEEN(SYSDATE, BIRTH_DATE) / 12) &gt; 50 THEN 1 ELSE 0 END) as over50
+        FROM CUSTOMERS
+        WHERE BIRTH_DATE IS NOT NULL
+    </select>
+
+</mapper>

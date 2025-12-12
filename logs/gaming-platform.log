@@ -1,68 +1,343 @@
-2025-12-11T00:16:59.781+08:00  INFO 18972 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-11T00:16:59.794+08:00  INFO 18972 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-11T10:44:11.540+08:00  INFO 24048 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 24048 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-11T10:44:11.543+08:00  INFO 24048 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-11T10:44:12.637+08:00  INFO 24048 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-11T10:44:12.649+08:00  INFO 24048 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-11T10:44:12.649+08:00  INFO 24048 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-11T10:44:12.679+08:00  INFO 24048 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1099 ms
-2025-12-11T10:44:13.010+08:00  INFO 24048 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-11T10:44:13.013+08:00  INFO 24048 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.95 seconds (process running for 9.317)
-2025-12-11T10:46:18.131+08:00  INFO 24048 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-11T10:46:18.132+08:00  INFO 24048 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-11T10:46:18.134+08:00  INFO 24048 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-12-11T11:00:09.064+08:00  INFO 24048 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-11T11:00:09.076+08:00  INFO 24048 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-11T11:00:15.674+08:00  INFO 24732 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 24732 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-11T11:00:15.676+08:00  INFO 24732 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-11T11:00:16.472+08:00  INFO 24732 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-11T11:00:16.484+08:00  INFO 24732 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-11T11:00:16.484+08:00  INFO 24732 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-11T11:00:16.515+08:00  INFO 24732 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 805 ms
-2025-12-11T11:00:16.793+08:00  INFO 24732 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-11T11:00:16.796+08:00  INFO 24732 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.464 seconds (process running for 2.087)
-2025-12-11T11:02:26.944+08:00  INFO 24732 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-11T11:02:26.945+08:00  INFO 24732 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-11T11:02:26.946+08:00  INFO 24732 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-11T11:05:15.680+08:00  INFO 24732 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-11T11:05:15.686+08:00  INFO 24732 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-11T11:05:17.780+08:00  INFO 9480 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 9480 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-11T11:05:17.782+08:00  INFO 9480 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-11T11:05:18.284+08:00  INFO 9480 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-11T11:05:18.293+08:00  INFO 9480 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-11T11:05:18.293+08:00  INFO 9480 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-11T11:05:18.327+08:00  INFO 9480 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 517 ms
-2025-12-11T11:05:18.553+08:00  INFO 9480 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-11T11:05:18.556+08:00  INFO 9480 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.019 seconds (process running for 1.306)
-2025-12-11T11:05:35.542+08:00  INFO 9480 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-11T11:05:35.542+08:00  INFO 9480 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-11T11:05:35.543+08:00  INFO 9480 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-11T11:13:15.909+08:00  INFO 9480 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-11T11:13:15.914+08:00  INFO 9480 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-11T11:13:18.278+08:00  INFO 12804 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 12804 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-11T11:13:18.280+08:00  INFO 12804 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-11T11:13:18.877+08:00  INFO 12804 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-11T11:13:18.885+08:00  INFO 12804 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-11T11:13:18.886+08:00  INFO 12804 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-11T11:13:18.915+08:00  INFO 12804 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 607 ms
-2025-12-11T11:13:19.166+08:00  INFO 12804 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-11T11:13:19.169+08:00  INFO 12804 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.132 seconds (process running for 1.421)
-2025-12-11T11:13:24.644+08:00  INFO 12804 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-11T11:13:24.644+08:00  INFO 12804 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-11T11:13:24.645+08:00  INFO 12804 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-12-11T12:08:36.883+08:00  INFO 12804 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2025-12-11T12:08:36.892+08:00  INFO 12804 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2025-12-11T12:08:39.674+08:00  INFO 12056 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 12056 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
-2025-12-11T12:08:39.675+08:00  INFO 12056 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
-2025-12-11T12:08:40.243+08:00  INFO 12056 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2025-12-11T12:08:40.253+08:00  INFO 12056 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-12-11T12:08:40.253+08:00  INFO 12056 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
-2025-12-11T12:08:40.282+08:00  INFO 12056 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 579 ms
-2025-12-11T12:08:40.542+08:00  INFO 12056 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2025-12-11T12:08:40.546+08:00  INFO 12056 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 1.12 seconds (process running for 1.439)
-2025-12-11T12:08:46.694+08:00  INFO 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-12-11T12:08:46.694+08:00  INFO 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-12-11T12:08:46.695+08:00  INFO 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-12-11T12:15:43.982+08:00  WARN 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-12-11T12:16:06.941+08:00  WARN 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-12-11T12:16:30.290+08:00  WARN 12056 --- [electronic-gaming-platform] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-12-13T00:04:45.156+08:00  INFO 11180 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-13T00:04:45.164+08:00  INFO 11180 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-13T00:04:45.167+08:00  INFO 11180 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:04:45.169+08:00  INFO 11180 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-13T00:04:45.172+08:00  INFO 11180 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-13T00:04:47.580+08:00  INFO 29504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 29504 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-13T00:04:47.581+08:00 DEBUG 29504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Running with Spring Boot v4.0.0, Spring v7.0.1
+2025-12-13T00:04:47.582+08:00  INFO 29504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T00:04:47.968+08:00  INFO 29504 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-13T00:04:47.983+08:00  INFO 29504 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-12-13T00:04:48.251+08:00  INFO 29504 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-13T00:04:48.260+08:00  INFO 29504 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-13T00:04:48.260+08:00  INFO 29504 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-13T00:04:48.289+08:00  INFO 29504 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 682 ms
+2025-12-13T00:04:48.488+08:00 DEBUG 29504 --- [electronic-gaming-platform] [main] c.e.e.filter.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-13T00:04:48.530+08:00  INFO 29504 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-13T00:04:48.723+08:00  INFO 29504 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5eeee124
+2025-12-13T00:04:48.724+08:00  INFO 29504 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-13T00:04:48.741+08:00  INFO 29504 --- [electronic-gaming-platform] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-13T00:04:48.765+08:00  INFO 29504 --- [electronic-gaming-platform] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-13T00:04:49.012+08:00  INFO 29504 --- [electronic-gaming-platform] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-13T00:04:49.088+08:00  WARN 29504 --- [electronic-gaming-platform] [main] org.hibernate.dialect.Dialect            : HHH000511: The 12.1.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-12-13T00:04:49.149+08:00  WARN 29504 --- [electronic-gaming-platform] [main] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2025-12-13T00:04:49.151+08:00  INFO 29504 --- [electronic-gaming-platform] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 12.1
+	Default catalog/schema: undefined/SYSTEM
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-13T00:04:49.439+08:00  INFO 29504 --- [electronic-gaming-platform] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-13T00:04:49.445+08:00  INFO 29504 --- [electronic-gaming-platform] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:04:49.510+08:00  WARN 29504 --- [electronic-gaming-platform] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-13T00:04:49.709+08:00  INFO 29504 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-13T00:04:49.713+08:00  INFO 29504 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 2.381 seconds (process running for 2.688)
+2025-12-13T00:04:49.715+08:00  INFO 29504 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 开始同步现有logo文件到客户端UI目录...
+2025-12-13T00:04:49.717+08:00  INFO 29504 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png -> ..\electronic-gaming-platform-client-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:04:49.717+08:00  INFO 29504 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: 20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:04:49.718+08:00  INFO 29504 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\default-game.svg -> ..\electronic-gaming-platform-client-ui\public\images\game\default-game.svg
+2025-12-13T00:04:49.718+08:00  INFO 29504 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: default-game.svg
+2025-12-13T00:04:49.719+08:00  INFO 29504 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\dota2.jpg -> ..\electronic-gaming-platform-client-ui\public\images\game\dota2.jpg
+2025-12-13T00:04:49.719+08:00  INFO 29504 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: dota2.jpg
+2025-12-13T00:04:49.719+08:00  INFO 29504 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 现有logo文件同步完成
+2025-12-13T00:04:51.682+08:00  INFO 29504 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-13T00:04:51.682+08:00  INFO 29504 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-13T00:04:51.683+08:00  INFO 29504 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-13T00:10:32.657+08:00  INFO 29504 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-13T00:10:32.662+08:00  INFO 29504 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-13T00:10:32.665+08:00  INFO 29504 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:10:32.667+08:00  INFO 29504 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-13T00:10:32.671+08:00  INFO 29504 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-13T00:10:34.016+08:00  INFO 6600 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 6600 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-13T00:10:34.017+08:00 DEBUG 6600 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Running with Spring Boot v4.0.0, Spring v7.0.1
+2025-12-13T00:10:34.017+08:00  INFO 6600 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T00:10:34.383+08:00  INFO 6600 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-13T00:10:34.397+08:00  INFO 6600 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-12-13T00:10:34.677+08:00  INFO 6600 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-13T00:10:34.685+08:00  INFO 6600 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-13T00:10:34.686+08:00  INFO 6600 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-13T00:10:34.715+08:00  INFO 6600 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 674 ms
+2025-12-13T00:10:34.917+08:00 DEBUG 6600 --- [electronic-gaming-platform] [main] c.e.e.filter.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-13T00:10:34.958+08:00  INFO 6600 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-13T00:10:35.141+08:00  INFO 6600 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3d1c52f5
+2025-12-13T00:10:35.142+08:00  INFO 6600 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-13T00:10:35.158+08:00  INFO 6600 --- [electronic-gaming-platform] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-13T00:10:35.183+08:00  INFO 6600 --- [electronic-gaming-platform] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-13T00:10:35.428+08:00  INFO 6600 --- [electronic-gaming-platform] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-13T00:10:35.504+08:00  WARN 6600 --- [electronic-gaming-platform] [main] org.hibernate.dialect.Dialect            : HHH000511: The 12.1.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-12-13T00:10:35.566+08:00  WARN 6600 --- [electronic-gaming-platform] [main] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2025-12-13T00:10:35.568+08:00  INFO 6600 --- [electronic-gaming-platform] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 12.1
+	Default catalog/schema: undefined/SYSTEM
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-13T00:10:35.856+08:00  INFO 6600 --- [electronic-gaming-platform] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-13T00:10:35.863+08:00  INFO 6600 --- [electronic-gaming-platform] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:10:35.932+08:00  WARN 6600 --- [electronic-gaming-platform] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-13T00:10:36.139+08:00  INFO 6600 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-13T00:10:36.142+08:00  INFO 6600 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 2.396 seconds (process running for 2.718)
+2025-12-13T00:10:36.144+08:00  INFO 6600 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 开始同步现有logo文件到客户端UI目录...
+2025-12-13T00:10:36.147+08:00  INFO 6600 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png -> ..\electronic-gaming-platform-client-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:10:36.147+08:00  INFO 6600 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: 20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:10:36.148+08:00  INFO 6600 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\default-game.svg -> ..\electronic-gaming-platform-client-ui\public\images\game\default-game.svg
+2025-12-13T00:10:36.148+08:00  INFO 6600 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: default-game.svg
+2025-12-13T00:10:36.149+08:00  INFO 6600 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\dota2.jpg -> ..\electronic-gaming-platform-client-ui\public\images\game\dota2.jpg
+2025-12-13T00:10:36.149+08:00  INFO 6600 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: dota2.jpg
+2025-12-13T00:10:36.149+08:00  INFO 6600 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 现有logo文件同步完成
+2025-12-13T00:10:37.912+08:00  INFO 6600 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-13T00:10:37.912+08:00  INFO 6600 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-13T00:10:37.913+08:00  INFO 6600 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-12-13T00:17:21.057+08:00  INFO 6600 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-13T00:17:21.062+08:00  INFO 6600 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-13T00:17:21.065+08:00  INFO 6600 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:17:21.067+08:00  INFO 6600 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-13T00:17:21.070+08:00  INFO 6600 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-13T00:17:22.425+08:00  INFO 10236 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 10236 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-13T00:17:22.426+08:00 DEBUG 10236 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Running with Spring Boot v4.0.0, Spring v7.0.1
+2025-12-13T00:17:22.426+08:00  INFO 10236 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T00:17:22.832+08:00  INFO 10236 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-13T00:17:22.846+08:00  INFO 10236 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-12-13T00:17:23.138+08:00  INFO 10236 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-13T00:17:23.146+08:00  INFO 10236 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-13T00:17:23.146+08:00  INFO 10236 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-13T00:17:23.176+08:00  INFO 10236 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 723 ms
+2025-12-13T00:17:23.382+08:00 DEBUG 10236 --- [electronic-gaming-platform] [main] c.e.e.filter.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-13T00:17:23.420+08:00  INFO 10236 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-13T00:17:23.599+08:00  INFO 10236 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6e93b0e7
+2025-12-13T00:17:23.600+08:00  INFO 10236 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-13T00:17:23.616+08:00  INFO 10236 --- [electronic-gaming-platform] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-13T00:17:23.642+08:00  INFO 10236 --- [electronic-gaming-platform] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-13T00:17:23.891+08:00  INFO 10236 --- [electronic-gaming-platform] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-13T00:17:23.963+08:00  WARN 10236 --- [electronic-gaming-platform] [main] org.hibernate.dialect.Dialect            : HHH000511: The 12.1.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-12-13T00:17:24.025+08:00  WARN 10236 --- [electronic-gaming-platform] [main] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2025-12-13T00:17:24.027+08:00  INFO 10236 --- [electronic-gaming-platform] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 12.1
+	Default catalog/schema: undefined/SYSTEM
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-13T00:17:24.320+08:00  INFO 10236 --- [electronic-gaming-platform] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-13T00:17:24.325+08:00  INFO 10236 --- [electronic-gaming-platform] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:17:24.387+08:00  WARN 10236 --- [electronic-gaming-platform] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-13T00:17:24.586+08:00  INFO 10236 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-13T00:17:24.590+08:00  INFO 10236 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 2.503 seconds (process running for 2.823)
+2025-12-13T00:17:24.591+08:00  INFO 10236 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 开始同步现有logo文件到客户端UI目录...
+2025-12-13T00:17:24.593+08:00  INFO 10236 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png -> ..\electronic-gaming-platform-client-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:17:24.594+08:00  INFO 10236 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: 20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:17:24.594+08:00  INFO 10236 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\default-game.svg -> ..\electronic-gaming-platform-client-ui\public\images\game\default-game.svg
+2025-12-13T00:17:24.594+08:00  INFO 10236 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: default-game.svg
+2025-12-13T00:17:24.595+08:00  INFO 10236 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\dota2.jpg -> ..\electronic-gaming-platform-client-ui\public\images\game\dota2.jpg
+2025-12-13T00:17:24.596+08:00  INFO 10236 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: dota2.jpg
+2025-12-13T00:17:24.596+08:00  INFO 10236 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 现有logo文件同步完成
+2025-12-13T00:17:28.945+08:00  INFO 10236 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-13T00:17:28.945+08:00  INFO 10236 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-13T00:17:28.948+08:00  INFO 10236 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-13T00:19:09.636+08:00  INFO 10236 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-13T00:19:09.641+08:00  INFO 10236 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-13T00:19:09.643+08:00  INFO 10236 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:19:09.645+08:00  INFO 10236 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-13T00:19:09.648+08:00  INFO 10236 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-13T00:19:11.792+08:00  INFO 30076 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 30076 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-13T00:19:11.793+08:00 DEBUG 30076 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Running with Spring Boot v4.0.0, Spring v7.0.1
+2025-12-13T00:19:11.794+08:00  INFO 30076 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T00:19:12.169+08:00  INFO 30076 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-13T00:19:12.182+08:00  INFO 30076 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2025-12-13T00:19:12.464+08:00  INFO 30076 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-13T00:19:12.474+08:00  INFO 30076 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-13T00:19:12.474+08:00  INFO 30076 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-13T00:19:12.500+08:00  INFO 30076 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 677 ms
+2025-12-13T00:19:12.819+08:00 DEBUG 30076 --- [electronic-gaming-platform] [main] c.e.e.filter.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-13T00:19:12.936+08:00  INFO 30076 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-13T00:19:13.327+08:00  INFO 30076 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@b94703b
+2025-12-13T00:19:13.329+08:00  INFO 30076 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-13T00:19:13.362+08:00  INFO 30076 --- [electronic-gaming-platform] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-13T00:19:13.416+08:00  INFO 30076 --- [electronic-gaming-platform] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-13T00:19:14.039+08:00  INFO 30076 --- [electronic-gaming-platform] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-13T00:19:14.192+08:00  WARN 30076 --- [electronic-gaming-platform] [main] org.hibernate.dialect.Dialect            : HHH000511: The 12.1.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-12-13T00:19:14.377+08:00  WARN 30076 --- [electronic-gaming-platform] [main] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2025-12-13T00:19:14.383+08:00  INFO 30076 --- [electronic-gaming-platform] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 12.1
+	Default catalog/schema: undefined/SYSTEM
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-13T00:19:15.037+08:00  INFO 30076 --- [electronic-gaming-platform] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-13T00:19:15.049+08:00  INFO 30076 --- [electronic-gaming-platform] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:19:15.199+08:00  WARN 30076 --- [electronic-gaming-platform] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-13T00:19:15.660+08:00  INFO 30076 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-13T00:19:15.668+08:00  INFO 30076 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 4.122 seconds (process running for 4.445)
+2025-12-13T00:19:15.672+08:00  INFO 30076 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 开始同步现有logo文件到客户端UI目录...
+2025-12-13T00:19:15.678+08:00  INFO 30076 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png -> ..\electronic-gaming-platform-client-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:19:15.679+08:00  INFO 30076 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: 20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:19:15.682+08:00  INFO 30076 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\default-game.svg -> ..\electronic-gaming-platform-client-ui\public\images\game\default-game.svg
+2025-12-13T00:19:15.682+08:00  INFO 30076 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: default-game.svg
+2025-12-13T00:19:15.684+08:00  INFO 30076 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\dota2.jpg -> ..\electronic-gaming-platform-client-ui\public\images\game\dota2.jpg
+2025-12-13T00:19:15.684+08:00  INFO 30076 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: dota2.jpg
+2025-12-13T00:19:15.684+08:00  INFO 30076 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 现有logo文件同步完成
+2025-12-13T00:19:18.622+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-13T00:19:18.622+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-13T00:19:18.623+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-12-13T00:19:22.659+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-3] c.e.e.service.impl.LibraryServiceImpl    : 获取用户游戏库列表，共6个游戏
+2025-12-13T00:19:22.659+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-3] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 8, 名称: CS:GO, 购买时间: null
+2025-12-13T00:19:22.659+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-3] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 7, 名称: Dota 2, 购买时间: null
+2025-12-13T00:19:22.660+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-3] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 4, 名称: 文明6, 购买时间: null
+2025-12-13T00:19:22.660+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-3] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 2, 名称: 绝地求生, 购买时间: null
+2025-12-13T00:19:22.660+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-3] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 1, 名称: 英雄联盟, 购买时间: null
+2025-12-13T00:19:22.660+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-3] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 3, 名称: 魔兽世界, 购买时间: null
+2025-12-13T00:19:28.353+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-5] c.e.e.service.impl.LibraryServiceImpl    : 获取用户游戏库列表，共6个游戏
+2025-12-13T00:19:28.353+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-5] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 8, 名称: CS:GO, 购买时间: null
+2025-12-13T00:19:28.353+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-5] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 7, 名称: Dota 2, 购买时间: null
+2025-12-13T00:19:28.353+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-5] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 4, 名称: 文明6, 购买时间: null
+2025-12-13T00:19:28.353+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-5] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 2, 名称: 绝地求生, 购买时间: null
+2025-12-13T00:19:28.353+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-5] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 1, 名称: 英雄联盟, 购买时间: null
+2025-12-13T00:19:28.353+08:00  INFO 30076 --- [electronic-gaming-platform] [http-nio-8080-exec-5] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 3, 名称: 魔兽世界, 购买时间: null
+2025-12-13T00:21:20.153+08:00  INFO 30076 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-13T00:21:20.157+08:00  INFO 30076 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-13T00:21:20.159+08:00  INFO 30076 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:21:20.161+08:00  INFO 30076 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-13T00:21:20.165+08:00  INFO 30076 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-13T00:21:22.462+08:00  INFO 12376 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 12376 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-13T00:21:22.464+08:00 DEBUG 12376 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Running with Spring Boot v4.0.0, Spring v7.0.1
+2025-12-13T00:21:22.465+08:00  INFO 12376 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T00:21:22.871+08:00  INFO 12376 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-13T00:21:22.884+08:00  INFO 12376 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-12-13T00:21:23.153+08:00  INFO 12376 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-13T00:21:23.162+08:00  INFO 12376 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-13T00:21:23.162+08:00  INFO 12376 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-13T00:21:23.192+08:00  INFO 12376 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 700 ms
+2025-12-13T00:21:23.387+08:00 DEBUG 12376 --- [electronic-gaming-platform] [main] c.e.e.filter.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-13T00:21:23.433+08:00  INFO 12376 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-13T00:21:23.617+08:00  INFO 12376 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@b94703b
+2025-12-13T00:21:23.618+08:00  INFO 12376 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-13T00:21:23.633+08:00  INFO 12376 --- [electronic-gaming-platform] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-13T00:21:23.656+08:00  INFO 12376 --- [electronic-gaming-platform] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-13T00:21:23.900+08:00  INFO 12376 --- [electronic-gaming-platform] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-13T00:21:23.974+08:00  WARN 12376 --- [electronic-gaming-platform] [main] org.hibernate.dialect.Dialect            : HHH000511: The 12.1.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-12-13T00:21:24.044+08:00  WARN 12376 --- [electronic-gaming-platform] [main] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2025-12-13T00:21:24.046+08:00  INFO 12376 --- [electronic-gaming-platform] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 12.1
+	Default catalog/schema: undefined/SYSTEM
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-13T00:21:24.338+08:00  INFO 12376 --- [electronic-gaming-platform] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-13T00:21:24.344+08:00  INFO 12376 --- [electronic-gaming-platform] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:21:24.409+08:00  WARN 12376 --- [electronic-gaming-platform] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-13T00:21:24.611+08:00  INFO 12376 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-13T00:21:24.614+08:00  INFO 12376 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 2.414 seconds (process running for 2.732)
+2025-12-13T00:21:24.616+08:00  INFO 12376 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 开始同步现有logo文件到客户端UI目录...
+2025-12-13T00:21:24.618+08:00  INFO 12376 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png -> ..\electronic-gaming-platform-client-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:21:24.618+08:00  INFO 12376 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: 20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:21:24.619+08:00  INFO 12376 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\default-game.svg -> ..\electronic-gaming-platform-client-ui\public\images\game\default-game.svg
+2025-12-13T00:21:24.619+08:00  INFO 12376 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: default-game.svg
+2025-12-13T00:21:24.620+08:00  INFO 12376 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\dota2.jpg -> ..\electronic-gaming-platform-client-ui\public\images\game\dota2.jpg
+2025-12-13T00:21:24.620+08:00  INFO 12376 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: dota2.jpg
+2025-12-13T00:21:24.620+08:00  INFO 12376 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 现有logo文件同步完成
+2025-12-13T00:21:25.932+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-13T00:21:25.932+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-13T00:21:25.934+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-13T00:21:29.719+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-4] c.e.e.service.impl.LibraryServiceImpl    : 获取用户游戏库列表，共6个游戏
+2025-12-13T00:21:29.720+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-4] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 8, 名称: CS:GO, 购买时间: null
+2025-12-13T00:21:29.720+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-4] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 7, 名称: Dota 2, 购买时间: null
+2025-12-13T00:21:29.720+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-4] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 4, 名称: 文明6, 购买时间: null
+2025-12-13T00:21:29.720+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-4] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 2, 名称: 绝地求生, 购买时间: null
+2025-12-13T00:21:29.720+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-4] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 1, 名称: 英雄联盟, 购买时间: null
+2025-12-13T00:21:29.720+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-4] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 3, 名称: 魔兽世界, 购买时间: null
+2025-12-13T00:21:46.684+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-6] c.e.e.service.impl.LibraryServiceImpl    : 获取用户游戏库列表，共7个游戏
+2025-12-13T00:21:46.687+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-6] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 8, 名称: CS:GO, 购买时间: null
+2025-12-13T00:21:46.687+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-6] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 7, 名称: Dota 2, 购买时间: null
+2025-12-13T00:21:46.687+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-6] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 4, 名称: 文明6, 购买时间: null
+2025-12-13T00:21:46.687+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-6] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 2, 名称: 绝地求生, 购买时间: null
+2025-12-13T00:21:46.687+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-6] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 1, 名称: 英雄联盟, 购买时间: null
+2025-12-13T00:21:46.687+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-6] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 11, 名称: 荒野大镖客：救赎2, 购买时间: 2025-12-13T00:21:36.699699
+2025-12-13T00:21:46.688+08:00  INFO 12376 --- [electronic-gaming-platform] [http-nio-8080-exec-6] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 3, 名称: 魔兽世界, 购买时间: null
+2025-12-13T00:29:39.441+08:00  INFO 12376 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-13T00:29:39.446+08:00  INFO 12376 --- [electronic-gaming-platform] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-13T00:29:39.448+08:00  INFO 12376 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:29:39.450+08:00  INFO 12376 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-13T00:29:39.453+08:00  INFO 12376 --- [electronic-gaming-platform] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-13T00:44:08.124+08:00  INFO 14156 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Starting ElectronicGamingPlatformApplication using Java 25 with PID 14156 (D:\code\electronic-gaming-platform\target\classes started by wang in D:\code\electronic-gaming-platform)
+2025-12-13T00:44:08.125+08:00 DEBUG 14156 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Running with Spring Boot v4.0.0, Spring v7.0.1
+2025-12-13T00:44:08.126+08:00  INFO 14156 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : No active profile set, falling back to 1 default profile: "default"
+2025-12-13T00:44:08.933+08:00  INFO 14156 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-13T00:44:08.952+08:00  INFO 14156 --- [electronic-gaming-platform] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2025-12-13T00:44:09.285+08:00  INFO 14156 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-13T00:44:09.296+08:00  INFO 14156 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-13T00:44:09.297+08:00  INFO 14156 --- [electronic-gaming-platform] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-13T00:44:09.329+08:00  INFO 14156 --- [electronic-gaming-platform] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1163 ms
+2025-12-13T00:44:09.636+08:00 DEBUG 14156 --- [electronic-gaming-platform] [main] c.e.e.filter.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-13T00:44:09.688+08:00  INFO 14156 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-13T00:44:09.928+08:00  INFO 14156 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@687a0e40
+2025-12-13T00:44:09.929+08:00  INFO 14156 --- [electronic-gaming-platform] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-13T00:44:09.950+08:00  INFO 14156 --- [electronic-gaming-platform] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-13T00:44:10.000+08:00  INFO 14156 --- [electronic-gaming-platform] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-13T00:44:10.343+08:00  INFO 14156 --- [electronic-gaming-platform] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-13T00:44:10.450+08:00  WARN 14156 --- [electronic-gaming-platform] [main] org.hibernate.dialect.Dialect            : HHH000511: The 12.1.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2025-12-13T00:44:10.537+08:00  WARN 14156 --- [electronic-gaming-platform] [main] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2025-12-13T00:44:10.540+08:00  INFO 14156 --- [electronic-gaming-platform] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@localhost:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 12.1
+	Default catalog/schema: undefined/SYSTEM
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-13T00:44:10.961+08:00  INFO 14156 --- [electronic-gaming-platform] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-13T00:44:10.968+08:00  INFO 14156 --- [electronic-gaming-platform] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-13T00:44:11.039+08:00  WARN 14156 --- [electronic-gaming-platform] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-13T00:44:11.286+08:00  INFO 14156 --- [electronic-gaming-platform] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-13T00:44:11.289+08:00  INFO 14156 --- [electronic-gaming-platform] [main] .e.e.ElectronicGamingPlatformApplication : Started ElectronicGamingPlatformApplication in 3.514 seconds (process running for 3.983)
+2025-12-13T00:44:11.291+08:00  INFO 14156 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 开始同步现有logo文件到客户端UI目录...
+2025-12-13T00:44:11.294+08:00  INFO 14156 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png -> ..\electronic-gaming-platform-client-ui\public\images\game\20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:44:11.294+08:00  INFO 14156 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: 20251212200419_bb2eea0e036b4a4da5fbdfcad88e8a18.png
+2025-12-13T00:44:11.295+08:00  INFO 14156 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\default-game.svg -> ..\electronic-gaming-platform-client-ui\public\images\game\default-game.svg
+2025-12-13T00:44:11.295+08:00  INFO 14156 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: default-game.svg
+2025-12-13T00:44:11.297+08:00  INFO 14156 --- [electronic-gaming-platform] [main] c.e.e.service.FileSyncService            : 文件同步成功: ..\electronic-gaming-platform-ui\public\images\game\dota2.jpg -> ..\electronic-gaming-platform-client-ui\public\images\game\dota2.jpg
+2025-12-13T00:44:11.298+08:00  INFO 14156 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 同步文件成功: dota2.jpg
+2025-12-13T00:44:11.298+08:00  INFO 14156 --- [electronic-gaming-platform] [main] c.e.e.utils.ApplicationStartupTask       : 现有logo文件同步完成
+2025-12-13T00:44:13.328+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-13T00:44:13.328+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-13T00:44:13.329+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-12-13T00:44:34.326+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] c.e.e.service.impl.LibraryServiceImpl    : 获取用户游戏库列表，共7个游戏
+2025-12-13T00:44:34.326+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 8, 名称: CS:GO, 购买时间: null
+2025-12-13T00:44:34.326+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 7, 名称: Dota 2, 购买时间: null
+2025-12-13T00:44:34.328+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 4, 名称: 文明6, 购买时间: null
+2025-12-13T00:44:34.328+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 2, 名称: 绝地求生, 购买时间: null
+2025-12-13T00:44:34.328+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 1, 名称: 英雄联盟, 购买时间: null
+2025-12-13T00:44:34.328+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 11, 名称: 荒野大镖客：救赎2, 购买时间: 2025-12-13T00:21:36.699699
+2025-12-13T00:44:34.328+08:00  INFO 14156 --- [electronic-gaming-platform] [http-nio-8080-exec-1] c.e.e.service.impl.LibraryServiceImpl    : 游戏ID: 3, 名称: 魔兽世界, 购买时间: null

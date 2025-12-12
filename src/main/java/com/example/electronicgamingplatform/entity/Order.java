@@ -26,19 +26,9 @@ public class Order {
     private Long gameId;
 
     /**
-     * 购买数量
-     */
-    private Integer quantity;
-
-    /**
      * 订单金额
      */
     private BigDecimal amount;
-
-    /**
-     * 订单状态（0-待支付，1-已支付，2-已发货，3-已完成，4-已取消）
-     */
-    private Integer status;
 
     /**
      * 下单时间
@@ -50,19 +40,18 @@ public class Order {
      */
     private LocalDateTime updateTime;
 
+    // 无参构造方法（MyBatis反射实例化需要）
+    public Order() {}
 
     /**
      * 有参构造函数
      */
-    public Order(Long Id, Long customerId, Long gameId, Integer quantity, BigDecimal amount, Integer status) {
+    public Order(Long Id, Long customerId, Long gameId, BigDecimal amount) {
         this.id = Id;
         this.customerId = customerId;
         this.gameId = gameId;
-        this.quantity = quantity;
         this.amount = amount;
-        this.status = status;
         this.createTime = LocalDateTime.now();
         this.updateTime = LocalDateTime.now();
     }
-
 }

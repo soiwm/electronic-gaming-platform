@@ -32,10 +32,26 @@ public class GameServiceImpl implements GameService {
     @Override
     public boolean addGame(Game game) {
         // 业务逻辑校验（如游戏名称不能为空）
-        if (game.getName() == null || game.getName().trim().isEmpty()) {
+        if (game == null || game.getName() == null || game.getName().trim().isEmpty()) {
             return false;
         }
-        return gameMapper.insertGame(game); // 调用 Mapper 层方法
+        
+        try {
+            // 检查游戏名称是否已存在
+            Game existingGame = gameMapper.selectGameByName(game.getName());
+            if (existingGame != null) {
+                return false; // 游戏名称已存在
+            }
+            
+            // 调用 Mapper 层新增
+            Integer result = gameMapper.insertGame(game);
+            // 如果插入成功，MyBatis会自动将生成的ID设置到game对象中
+            return result != null && result > 0;
+        } catch (Exception e) {
+            // 记录错误日志
+            e.printStackTrace();
+            return false;
+        }
     }
 
     /**
@@ -65,10 +81,38 @@ public class GameServiceImpl implements GameService {
      */
     @Override
     public boolean updateGame(Game game) {
-        // 业务校验：名称不能为空
+        // 业务校验
+        if (game == null || game.getId() == null || game.getId() <= 0) {
+            return false;
+        }
+        
+        // 检查游戏是否存在
+        Game existingGame = gameMapper.selectGameById(game.getId());
+        if (existingGame == null) {
+            return false;
+        }
+        
+        // 名称不能为空
         if (game.getName() == null || game.getName().trim().isEmpty()) {
             return false;
         }
-        return gameMapper.updateGame(game);
+        
+        // 如果修改了名称，检查新名称是否与其他游戏重复
+        if (!game.getName().equals(existingGame.getName())) {
+            Game gameWithSameName = gameMapper.selectGameByName(game.getName());
+            if (gameWithSameName != null && !gameWithSameName.getId().equals(game.getId())) {
+                return false; // 其他游戏已使用该名称
+            }
+        }
+        
+        try {
+            // 调用 Mapper 层更新
+            Integer result = gameMapper.updateGame(game);
+            return result != null && result > 0;
+        } catch (Exception e) {
+            // 记录错误日志
+            e.printStackTrace();
+            return false;
+        }
     }
 }

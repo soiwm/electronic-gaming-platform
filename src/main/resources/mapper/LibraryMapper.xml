@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.electronicgamingplatform.mapper.LibraryMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="GameResultMap" type="com.example.electronicgamingplatform.entity.Game">
+        <id property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="type" column="TYPE"/>
+        <result property="description" column="DESCRIPTION"/>
+        <result property="price" column="PRICE"/>
+        <result property="logo" column="LOGO"/>
+        <result property="installed" column="IS_INSTALLED"/>
+        <result property="favorite" column="IS_FAVORITE"/>
+        <result property="purchaseTime" column="PURCHASE_TIME"/>
+    </resultMap>
+
+    <!-- 获取用户游戏库列表 -->
+    <select id="selectUserGames" resultMap="GameResultMap">
+        SELECT g.ID, g.NAME, g.TYPE, g.DESCRIPTION, g.PRICE, g.LOGO, 
+               ugl.IS_INSTALLED, ugl.IS_FAVORITE, ugl.PURCHASE_TIME
+        FROM GAMES g
+        INNER JOIN USER_GAME_LIBRARY ugl ON g.ID = ugl.GAME_ID
+        WHERE ugl.USER_ID = 1  -- 假设当前登录用户ID为1，实际应用中应从Session或SecurityContext获取
+        ORDER BY g.NAME
+    </select>
+
+    <!-- 根据ID查询游戏 -->
+    <select id="selectGameById" resultMap="GameResultMap">
+        SELECT g.ID, g.NAME, g.TYPE, g.DESCRIPTION, g.PRICE, g.LOGO,
+               COALESCE(ugl.IS_INSTALLED, 0) AS IS_INSTALLED,
+               COALESCE(ugl.IS_FAVORITE, 0) AS IS_FAVORITE,
+               ugl.PURCHASE_TIME
+        FROM GAMES g
+        LEFT JOIN USER_GAME_LIBRARY ugl ON g.ID = ugl.GAME_ID AND ugl.USER_ID = 1
+        WHERE g.ID = #{id}
+    </select>
+
+</mapper>

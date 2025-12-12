@@ -17,9 +17,19 @@ public class OrderVO {
     private Long id;
 
     /**
+     * 客户ID
+     */
+    private Long customerId;
+
+    /**
      * 客户姓名
      */
     private String customerName;
+
+    /**
+     * 游戏ID
+     */
+    private Long gameId;
 
     /**
      * 游戏名称
@@ -50,10 +60,12 @@ public class OrderVO {
     /**
      * 有参构造函数
      */
-    public OrderVO(Long id, String customerName, String gameName, 
+    public OrderVO(Long id, Long customerId, String customerName, Long gameId, String gameName, 
                    BigDecimal amount, LocalDateTime createTime, LocalDateTime updateTime) {
         this.id = id;
+        this.customerId = customerId;
         this.customerName = customerName;
+        this.gameId = gameId;
         this.gameName = gameName;
         this.amount = amount;
         this.createTime = createTime;

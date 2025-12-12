@@ -1,12 +1,14 @@
 package com.example.electronicgamingplatform.mapper;
 
 import com.example.electronicgamingplatform.entity.Game;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 /**
  * 游戏库数据访问接口
  */
+@Mapper
 public interface LibraryMapper {
 
     /**

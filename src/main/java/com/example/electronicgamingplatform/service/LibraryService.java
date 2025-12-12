@@ -23,9 +23,23 @@ public interface LibraryService {
     boolean launchGame(Long gameId);
 
     /**
-     * 卸载游戏（模拟）
+     * 安装游戏
+     * @param gameId 游戏ID
+     * @return 是否成功
+     */
+    boolean installGame(Long gameId);
+
+    /**
+     * 卸载游戏
      * @param gameId 游戏ID
      * @return 是否成功
      */
     boolean uninstallGame(Long gameId);
+
+    /**
+     * 切换收藏状态
+     * @param gameId 游戏ID
+     * @return 是否成功
+     */
+    boolean toggleFavorite(Long gameId);
 }

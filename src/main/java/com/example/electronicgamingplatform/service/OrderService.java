@@ -62,4 +62,12 @@ public interface OrderService {
      * @return 用户订单VO列表
      */
     List<OrderVO> getUserOrders();
+
+    /**
+     * 创建订单并添加到用户游戏库
+     * @param customerId 客户ID
+     * @param gameId 游戏ID
+     * @return 是否创建成功
+     */
+    boolean createOrderAndAddToLibrary(Long customerId, Long gameId);
 }

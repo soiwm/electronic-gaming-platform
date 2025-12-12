@@ -2,12 +2,16 @@ package com.example.electronicgamingplatform.mapper;
 
 import com.example.electronicgamingplatform.entity.Order;
 import com.example.electronicgamingplatform.vo.OrderVO;
+import org.apache.ibatis.annotations.MapKey;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 订单数据访问层接口
  */
+@Mapper
 public interface OrderMapper {
 
     /**
@@ -43,7 +47,8 @@ public interface OrderMapper {
     /**
      * 按游戏ID统计销量
      */
-    List<Order> getOrderGroupByGameId();
+    @MapKey("gameId")
+    List<Map<String, Object>> getOrderGroupByGameId();
 
     /**
      * 根据客户ID查询订单

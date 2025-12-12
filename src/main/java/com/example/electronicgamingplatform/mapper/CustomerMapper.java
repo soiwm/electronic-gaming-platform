@@ -1,12 +1,16 @@
 package com.example.electronicgamingplatform.mapper;
 
 import com.example.electronicgamingplatform.entity.Customer;
+import org.apache.ibatis.annotations.MapKey;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 客户数据访问接口
  */
+@Mapper
 public interface CustomerMapper {
 
     /**
@@ -17,7 +21,7 @@ public interface CustomerMapper {
     /**
      * 新增客户
      */
-    boolean insertCustomer(Customer customer);
+    int insertCustomer(Customer customer);
     /**
      * 根据ID查询客户
      */
@@ -31,10 +35,15 @@ public interface CustomerMapper {
     /**
      * 更新客户信息
      */
-    boolean updateCustomer(Customer customer);
+    int updateCustomer(Customer customer);
 
     /**
      * 根据ID删除客户
      */
-    boolean deleteCustomerById(Long id);
+    int deleteCustomerById(Long id);
+    
+    /**
+     * 查询客户年龄分布
+     */
+    Map<String, Object> getAgeDistribution();
 }

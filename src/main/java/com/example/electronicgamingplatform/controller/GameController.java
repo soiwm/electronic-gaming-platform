@@ -56,11 +56,15 @@ public class GameController {
      */
     @PostMapping("/add")
     public Result<String> addGame(@RequestBody Game game) {
+        if (game == null || game.getName() == null || game.getName().trim().isEmpty()) {
+            return Result.error("游戏名称不能为空");
+        }
+        
         boolean success = gameService.addGame(game); // 调用 Service 层
         if (success) {
             return Result.success("游戏添加成功");
         } else {
-            return Result.error("游戏名称不能为空");
+            return Result.error("游戏添加失败，可能游戏名称已存在");
         }
     }
 

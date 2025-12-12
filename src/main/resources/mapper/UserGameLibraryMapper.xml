@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.electronicgamingplatform.mapper.UserGameLibraryMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="UserGameLibraryResultMap" type="com.example.electronicgamingplatform.entity.UserGameLibrary">
+        <id column="ID" property="id" />
+        <result column="USER_ID" property="userId" />
+        <result column="USER_NAME" property="userName" />
+        <result column="GAME_ID" property="gameId" />
+        <result column="IS_INSTALLED" property="isInstalled" />
+        <result column="IS_FAVORITE" property="isFavorite" />
+        <result column="PURCHASE_TIME" property="purchaseTime" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 添加用户游戏库记录 -->
+    <insert id="addUserGameLibrary" parameterType="com.example.electronicgamingplatform.entity.UserGameLibrary">
+        INSERT INTO USER_GAME_LIBRARY (USER_ID, USER_NAME, GAME_ID, IS_INSTALLED, IS_FAVORITE, PURCHASE_TIME)
+        VALUES (#{userId,jdbcType=NUMERIC}, #{userName,jdbcType=VARCHAR}, #{gameId,jdbcType=NUMERIC}, #{isInstalled,jdbcType=NUMERIC}, #{isFavorite,jdbcType=NUMERIC}, #{purchaseTime,jdbcType=TIMESTAMP})
+    </insert>
+
+    <!-- 根据用户ID和游戏ID查询记录 -->
+    <select id="getUserGameLibrary" resultMap="UserGameLibraryResultMap">
+        SELECT ID, USER_ID, USER_NAME, GAME_ID, IS_INSTALLED, IS_FAVORITE, PURCHASE_TIME, CREATE_TIME, UPDATE_TIME
+        FROM USER_GAME_LIBRARY
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC} AND GAME_ID = #{gameId,jdbcType=NUMERIC}
+    </select>
+
+    <!-- 根据用户ID查询所有游戏库记录 -->
+    <select id="getUserGameLibraryByUserId" resultMap="UserGameLibraryResultMap">
+        SELECT ID, USER_ID, USER_NAME, GAME_ID, IS_INSTALLED, IS_FAVORITE, PURCHASE_TIME, CREATE_TIME, UPDATE_TIME
+        FROM USER_GAME_LIBRARY
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC}
+        ORDER BY PURCHASE_TIME DESC
+    </select>
+
+    <!-- 更新安装状态 -->
+    <update id="updateInstallStatus">
+        UPDATE USER_GAME_LIBRARY
+        SET IS_INSTALLED = #{isInstalled,jdbcType=NUMERIC}
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC} AND GAME_ID = #{gameId,jdbcType=NUMERIC}
+    </update>
+
+    <!-- 更新收藏状态 -->
+    <update id="updateFavoriteStatus">
+        UPDATE USER_GAME_LIBRARY
+        SET IS_FAVORITE = #{isFavorite,jdbcType=NUMERIC}
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC} AND GAME_ID = #{gameId,jdbcType=NUMERIC}
+    </update>
+
+    <!-- 检查用户是否已购买游戏 -->
+    <select id="checkUserPurchasedGame" resultType="int">
+        SELECT COUNT(1)
+        FROM USER_GAME_LIBRARY
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC} AND GAME_ID = #{gameId,jdbcType=NUMERIC}
+    </select>
+
+</mapper>

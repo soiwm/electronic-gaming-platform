@@ -51,8 +51,16 @@ public class CustomerServiceImpl implements CustomerService {
                 || customer.getPhone() == null || customer.getPhone().trim().isEmpty()) {
             return false; // 校验失败，返回 false
         }
-        // 调用 Mapper 层新增
-        return customerMapper.insertCustomer(customer);
+        try {
+            // 调用 Mapper 层新增
+            int result = customerMapper.insertCustomer(customer);
+            // 如果插入成功，MyBatis会自动将生成的ID设置到customer对象中
+            return result > 0;
+        } catch (Exception e) {
+            // 记录错误日志
+            e.printStackTrace();
+            return false;
+        }
     }
 
     /**
@@ -68,7 +76,7 @@ public class CustomerServiceImpl implements CustomerService {
             return false; // 校验失败，返回 false
         }
         // 调用 Mapper 层更新
-        return customerMapper.updateCustomer(customer);
+        return customerMapper.updateCustomer(customer) > 0;
     }
 
     /**
@@ -81,7 +89,7 @@ public class CustomerServiceImpl implements CustomerService {
             return false;
         }
         // 调用 Mapper 层删除
-        return customerMapper.deleteCustomerById(id);
+        return customerMapper.deleteCustomerById(id) > 0;
     }
     
     /**
@@ -100,5 +108,18 @@ public class CustomerServiceImpl implements CustomerService {
             return customer;
         }
         return null;
+    }
+    
+    /**
+     * 根据手机号查询客户
+     */
+    @Override
+    public Customer getCustomerByPhone(String phone) {
+        // 业务校验：手机号不能为空
+        if (phone == null || phone.trim().isEmpty()) {
+            return null;
+        }
+        // 调用 Mapper 层查询客户
+        return customerMapper.selectCustomerByPhone(phone);
     }
 }

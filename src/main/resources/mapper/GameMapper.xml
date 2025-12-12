@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.electronicgamingplatform.mapper.GameMapper">
+    
+    <!-- 结果映射 -->
+    <resultMap id="GameResultMap" type="com.example.electronicgamingplatform.entity.Game">
+        <id property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="type" column="TYPE"/>
+        <result property="description" column="DESCRIPTION"/>
+        <result property="price" column="PRICE"/>
+        <result property="logo" column="LOGO"/>
+    </resultMap>
+    
+    <!-- 查询所有游戏 -->
+    <select id="selectAllGames" resultMap="GameResultMap">
+        SELECT ID, NAME, TYPE, DESCRIPTION, PRICE, LOGO
+        FROM GAMES
+        ORDER BY ID
+    </select>
+    
+    <!-- 根据ID查询游戏 -->
+    <select id="selectGameById" resultMap="GameResultMap" parameterType="java.lang.Long">
+        SELECT ID, NAME, TYPE, DESCRIPTION, PRICE, LOGO
+        FROM GAMES
+        WHERE ID = #{id,jdbcType=NUMERIC}
+    </select>
+    
+    <!-- 根据名称查询游戏 -->
+    <select id="selectGameByName" resultMap="GameResultMap" parameterType="java.lang.String">
+        SELECT ID, NAME, TYPE, DESCRIPTION, PRICE, LOGO
+        FROM GAMES
+        WHERE NAME = #{name,jdbcType=VARCHAR}
+    </select>
+    
+    <!-- 插入游戏 -->
+    <insert id="insertGame" parameterType="com.example.electronicgamingplatform.entity.Game">
+        <selectKey keyProperty="id" resultType="java.lang.Long" order="AFTER">
+            SELECT GAMES_SEQ.CURRVAL FROM DUAL
+        </selectKey>
+        INSERT INTO GAMES (NAME, TYPE, DESCRIPTION, PRICE, LOGO)
+        VALUES (#{name, jdbcType=VARCHAR}, #{type, jdbcType=VARCHAR}, #{description, jdbcType=VARCHAR}, #{price, jdbcType=DECIMAL}, #{logo, jdbcType=VARCHAR})
+    </insert>
+    
+    <!-- 更新游戏 -->
+    <update id="updateGame" parameterType="com.example.electronicgamingplatform.entity.Game">
+        UPDATE GAMES
+        SET 
+            NAME = #{name, jdbcType=VARCHAR},
+            TYPE = #{type, jdbcType=VARCHAR},
+            DESCRIPTION = #{description, jdbcType=VARCHAR},
+            PRICE = #{price, jdbcType=DECIMAL},
+            LOGO = #{logo, jdbcType=VARCHAR}
+        WHERE ID = #{id, jdbcType=NUMERIC}
+    </update>
+    
+    <!-- 根据ID删除游戏 -->
+    <delete id="deleteGameById" parameterType="java.lang.Long">
+        DELETE FROM GAMES
+        WHERE ID = #{id,jdbcType=NUMERIC}
+    </delete>
+    
+</mapper>

@@ -44,7 +44,22 @@ public class LibraryController {
     }
 
     /**
-     * 卸载游戏（模拟）
+     * 安装游戏
+     * 请求方式：POST
+     * 接口路径：/library/install/{gameId}
+     */
+    @PostMapping("/install/{gameId}")
+    public Result<String> installGame(@PathVariable Long gameId) {
+        boolean success = libraryService.installGame(gameId);
+        if (success) {
+            return Result.success("游戏安装成功");
+        } else {
+            return Result.error("游戏安装失败，游戏不存在或未购买");
+        }
+    }
+
+    /**
+     * 卸载游戏
      * 请求方式：POST
      * 接口路径：/library/uninstall/{gameId}
      */
@@ -55,6 +70,21 @@ public class LibraryController {
             return Result.success("游戏卸载成功");
         } else {
             return Result.error("游戏卸载失败，游戏不存在或未购买");
+        }
+    }
+
+    /**
+     * 切换收藏状态
+     * 请求方式：POST
+     * 接口路径：/library/favorite/{gameId}
+     */
+    @PostMapping("/favorite/{gameId}")
+    public Result<String> toggleFavorite(@PathVariable Long gameId) {
+        boolean success = libraryService.toggleFavorite(gameId);
+        if (success) {
+            return Result.success("收藏状态更新成功");
+        } else {
+            return Result.error("收藏状态更新失败，游戏不存在或未购买");
         }
     }
 }

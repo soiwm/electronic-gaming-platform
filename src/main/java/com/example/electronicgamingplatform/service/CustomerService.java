@@ -41,4 +41,11 @@ public interface CustomerService {
      * @return 验证通过返回客户信息，否则返回null
      */
     Customer authenticateCustomer(String phone, String password);
+    
+    /**
+     * 根据手机号查询客户
+     * @param phone 客户手机号
+     * @return 客户信息，不存在则返回null
+     */
+    Customer getCustomerByPhone(String phone);
 }

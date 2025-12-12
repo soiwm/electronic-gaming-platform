@@ -2,12 +2,38 @@
 spring:
   application:
     name: electronic-gaming-platform  # 项目名称（可选，用于服务注册/日志等）
-  # （可选）后续添加数据库配置时，可在此处扩展
-  # datasource:
-  #   url: jdbc:mysql://localhost:3306/gaming_db?useSSL=false&serverTimezone=Asia/Shanghai
-  #   username: root
-  #   password: 123456
-  #   driver-class-name: com.mysql.cj.jdbc.Driver
+  # Oracle数据库配置
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+    password: orcl
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+  # 禁用Spring Session JDBC
+  session:
+    store-type: none
+  # 日期格式化配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  # 文件上传配置
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 10MB
+
+# MyBatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.electronicgamingplatform.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 # 服务器配置
 server:
@@ -17,10 +43,16 @@ server:
   tomcat:
     uri-encoding: UTF-8  # 解决中文乱码（可选，推荐添加）
 
+# 文件上传配置
+upload:
+  path: ../electronic-gaming-platform-ui/public/images/game  # 文件上传存储路径（指向前端目录）
+  url-prefix: /images/game  # 文件访问URL前缀（与前端静态资源路径一致）
+
 # 日志配置（可选，优化日志输出）
 logging:
   level:
     root: INFO  # 全局日志级别（INFO/WARN/ERROR/DEBUG）
-    com.yourpackage: DEBUG  # 你的项目包名日志级别（方便调试接口）
+    com.example.electronicgamingplatform: DEBUG  # 项目包名日志级别（方便调试接口）
+    com.example.electronicgamingplatform.mapper: DEBUG  # Mapper接口日志级别
   file:
     name: logs/gaming-platform.log  # 日志文件存储路径（可选）

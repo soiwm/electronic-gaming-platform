@@ -1,13 +1,13 @@
 package com.example.electronicgamingplatform.mapper;
 
-
-
 import com.example.electronicgamingplatform.entity.Game;
+import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
  * 游戏数据访问接口（定义数据操作方法）
  */
+@Mapper
 public interface GameMapper {
 
     /**
@@ -18,7 +18,7 @@ public interface GameMapper {
     /**
      * 新增游戏
      */
-    boolean insertGame(Game game);
+    Integer insertGame(Game game);
 
     /**
      * 根据 ID 删除游戏
@@ -28,8 +28,13 @@ public interface GameMapper {
      * 根据 ID 查询游戏
      */
     Game selectGameById(Long id);
+    
+    /**
+     * 根据名称查询游戏
+     */
+    Game selectGameByName(String name);
     /**
      * 修改游戏信息
      */
-    boolean updateGame(Game game);
+    Integer updateGame(Game game);
 }

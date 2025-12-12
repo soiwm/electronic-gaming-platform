@@ -4,6 +4,7 @@ import com.example.electronicgamingplatform.common.Result;
 import com.example.electronicgamingplatform.entity.Order;
 import com.example.electronicgamingplatform.vo.OrderVO;
 import com.example.electronicgamingplatform.service.OrderService;
+import com.example.electronicgamingplatform.util.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -51,11 +52,16 @@ public class OrderController {
      */
     @PostMapping("/add")
     public Result<String> addOrder(@RequestBody Order order) {
-        boolean success = orderService.addOrder(order);
-        if (success) {
-            return Result.success("订单添加成功");
-        } else {
-            return Result.error("订单添加失败：客户ID、游戏ID、数量为必填项");
+        try {
+            boolean success = orderService.addOrder(order);
+            if (success) {
+                return Result.success("订单添加成功");
+            } else {
+                return Result.error("订单添加失败：客户ID和游戏ID为必填项");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error("订单添加失败：" + e.getMessage());
         }
     }
 
@@ -97,8 +103,45 @@ public class OrderController {
      */
     @GetMapping("/user/list")
     public Result<List<OrderVO>> getUserOrders() {
-        List<OrderVO> orderVOList = orderService.getUserOrders();
-        return Result.success(orderVOList);
+        try {
+            List<OrderVO> orders = orderService.getUserOrders();
+            return Result.success(orders);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error("获取用户订单失败");
+        }
+    }
+
+    /**
+     * 7. 创建订单（前端购买游戏功能）
+     * 请求方式：POST
+     * 接口路径：/order/create
+     * 请求体：包含gameId的JSON对象
+     */
+    @PostMapping("/create")
+    public Result<String> createOrder(@RequestBody Map<String, Long> request) {
+        try {
+            // 从UserContext获取当前登录用户ID
+            Long customerId = UserContext.getCurrentUserId();
+            if (customerId == null) {
+                return Result.error("用户未登录");
+            }
+            
+            Long gameId = request.get("gameId");
+            if (gameId == null) {
+                return Result.error("游戏ID不能为空");
+            }
+            
+            boolean success = orderService.createOrderAndAddToLibrary(customerId, gameId);
+            if (success) {
+                return Result.success("购买成功");
+            } else {
+                return Result.error("购买失败");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.error("购买失败：" + e.getMessage());
+        }
     }
 }
 
