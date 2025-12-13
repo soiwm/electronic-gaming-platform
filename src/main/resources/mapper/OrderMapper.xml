@@ -52,7 +52,7 @@
         INSERT INTO ORDERS (CUSTOMER_ID, GAME_ID, AMOUNT, CREATE_TIME, UPDATE_TIME)
         VALUES (#{customerId,jdbcType=NUMERIC}, #{gameId,jdbcType=NUMERIC}, #{amount,jdbcType=NUMERIC}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
         <selectKey keyProperty="id" resultType="java.lang.Long" order="AFTER">
-            SELECT SYSTEM.ORDERS_SEQ.CURRVAL FROM DUAL
+            SELECT ORDERS_SEQ.CURRVAL FROM DUAL
         </selectKey>
     </insert>
 
