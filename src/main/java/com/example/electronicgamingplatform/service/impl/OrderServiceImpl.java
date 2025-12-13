@@ -10,7 +10,7 @@ import com.example.electronicgamingplatform.mapper.GameMapper;
 import com.example.electronicgamingplatform.mapper.CustomerMapper;
 import com.example.electronicgamingplatform.service.OrderService;
 import com.example.electronicgamingplatform.service.GameService;
-import com.example.electronicgamingplatform.service.UserGameLibraryService;
+import com.example.electronicgamingplatform.service.LibraryService;
 import com.example.electronicgamingplatform.util.UserContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,7 +40,7 @@ public class OrderServiceImpl implements OrderService {
     private GameService gameService;
     
     @Autowired
-    private UserGameLibraryService userGameLibraryService;
+    private LibraryService libraryService;
 
     @Override
     public List<OrderVO> getAllOrders() {
@@ -287,7 +287,7 @@ public class OrderServiceImpl implements OrderService {
     public boolean createOrderAndAddToLibrary(Long customerId, Long gameId) {
         try {
             // 1. 检查用户是否已经购买过该游戏
-            boolean alreadyPurchased = userGameLibraryService.checkUserPurchasedGame(customerId, gameId);
+            boolean alreadyPurchased = libraryService.checkUserPurchasedGame(customerId, gameId);
             if (alreadyPurchased) {
                 System.out.println("用户已购买过该游戏，无需重复购买");
                 return false;
@@ -332,7 +332,7 @@ public class OrderServiceImpl implements OrderService {
             userGameLibrary.setCreateTime(LocalDateTime.now());
             userGameLibrary.setUpdateTime(LocalDateTime.now());
             
-            boolean libraryResult = userGameLibraryService.addUserGameLibrary(userGameLibrary);
+            boolean libraryResult = libraryService.addUserGameLibrary(userGameLibrary);
             if (!libraryResult) {
                 System.out.println("添加到用户游戏库失败");
                 return false;

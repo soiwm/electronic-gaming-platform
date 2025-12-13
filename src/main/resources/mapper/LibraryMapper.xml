@@ -3,7 +3,7 @@
 <mapper namespace="com.example.electronicgamingplatform.mapper.LibraryMapper">
 
     <!-- 结果映射 -->
-    <resultMap id="GameResultMap" type="com.example.electronicgamingplatform.entity.Game">
+    <resultMap id="GameLibraryVOResultMap" type="com.example.electronicgamingplatform.vo.GameLibraryVO">
         <id property="id" column="ID"/>
         <result property="name" column="NAME"/>
         <result property="type" column="TYPE"/>
@@ -15,25 +15,72 @@
         <result property="purchaseTime" column="PURCHASE_TIME"/>
     </resultMap>
 
+    <!-- 用户游戏库结果映射 -->
+    <resultMap id="UserGameLibraryResultMap" type="com.example.electronicgamingplatform.entity.UserGameLibrary">
+        <id column="ID" property="id" />
+        <result column="USER_ID" property="userId" />
+        <result column="USER_NAME" property="userName" />
+        <result column="GAME_ID" property="gameId" />
+        <result column="IS_INSTALLED" property="isInstalled" />
+        <result column="IS_FAVORITE" property="isFavorite" />
+        <result column="PURCHASE_TIME" property="purchaseTime" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
     <!-- 获取用户游戏库列表 -->
-    <select id="selectUserGames" resultMap="GameResultMap">
+    <select id="selectUserGames" resultMap="GameLibraryVOResultMap">
         SELECT g.ID, g.NAME, g.TYPE, g.DESCRIPTION, g.PRICE, g.LOGO, 
                ugl.IS_INSTALLED, ugl.IS_FAVORITE, ugl.PURCHASE_TIME
         FROM GAMES g
         INNER JOIN USER_GAME_LIBRARY ugl ON g.ID = ugl.GAME_ID
-        WHERE ugl.USER_ID = 1  -- 假设当前登录用户ID为1，实际应用中应从Session或SecurityContext获取
+        WHERE ugl.USER_ID = #{userId}
         ORDER BY g.NAME
     </select>
 
     <!-- 根据ID查询游戏 -->
-    <select id="selectGameById" resultMap="GameResultMap">
+    <select id="selectGameById" resultMap="GameLibraryVOResultMap">
         SELECT g.ID, g.NAME, g.TYPE, g.DESCRIPTION, g.PRICE, g.LOGO,
                COALESCE(ugl.IS_INSTALLED, 0) AS IS_INSTALLED,
                COALESCE(ugl.IS_FAVORITE, 0) AS IS_FAVORITE,
                ugl.PURCHASE_TIME
         FROM GAMES g
-        LEFT JOIN USER_GAME_LIBRARY ugl ON g.ID = ugl.GAME_ID AND ugl.USER_ID = 1
+        LEFT JOIN USER_GAME_LIBRARY ugl ON g.ID = ugl.GAME_ID AND ugl.USER_ID = #{userId}
         WHERE g.ID = #{id}
+    </select>
+
+    <!-- 添加用户游戏库记录 -->
+    <insert id="addUserGameLibrary" parameterType="com.example.electronicgamingplatform.entity.UserGameLibrary">
+        INSERT INTO USER_GAME_LIBRARY (USER_ID, USER_NAME, GAME_ID, IS_INSTALLED, IS_FAVORITE, PURCHASE_TIME)
+        VALUES (#{userId,jdbcType=NUMERIC}, #{userName,jdbcType=VARCHAR}, #{gameId,jdbcType=NUMERIC}, #{isInstalled,jdbcType=NUMERIC}, #{isFavorite,jdbcType=NUMERIC}, #{purchaseTime,jdbcType=TIMESTAMP})
+    </insert>
+
+    <!-- 根据用户ID和游戏ID查询记录 -->
+    <select id="getUserGameLibrary" resultMap="UserGameLibraryResultMap">
+        SELECT ID, USER_ID, USER_NAME, GAME_ID, IS_INSTALLED, IS_FAVORITE, PURCHASE_TIME, CREATE_TIME, UPDATE_TIME
+        FROM USER_GAME_LIBRARY
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC} AND GAME_ID = #{gameId,jdbcType=NUMERIC}
+    </select>
+
+    <!-- 更新安装状态 -->
+    <update id="updateInstallStatus">
+        UPDATE USER_GAME_LIBRARY
+        SET IS_INSTALLED = #{installStatus,jdbcType=NUMERIC}
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC} AND GAME_ID = #{gameId,jdbcType=NUMERIC}
+    </update>
+
+    <!-- 更新收藏状态 -->
+    <update id="updateFavoriteStatus">
+        UPDATE USER_GAME_LIBRARY
+        SET IS_FAVORITE = #{favoriteStatus,jdbcType=NUMERIC}
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC} AND GAME_ID = #{gameId,jdbcType=NUMERIC}
+    </update>
+
+    <!-- 检查用户是否已购买游戏 -->
+    <select id="checkUserPurchasedGame" resultType="int">
+        SELECT COUNT(1)
+        FROM USER_GAME_LIBRARY
+        WHERE USER_ID = #{userId,jdbcType=NUMERIC} AND GAME_ID = #{gameId,jdbcType=NUMERIC}
     </select>
 
 </mapper>
